@@ -1,0 +1,198 @@
+@charset "utf-8";
+@import url('common.css');
+@import url('layout.css');
+@import url('object.css');
+
+/* header */
+#header > h1 {
+  width: 212px;
+  height: 57px;
+}
+#header > h1 > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../images/main/logo.png");
+}
+#header li.on > a {
+  color: #d02220;
+}
+#header > ul > li {
+  margin-bottom: 30px;
+}
+#header > ul > li > ul {
+  overflow: hidden;
+  margin-top: 30px;
+  width: 100%;
+  background: #fafafa;
+  display: none;
+}
+#header > ul > li > a {
+  font-size: 17px;
+  color: #373737;
+}
+#header > ul > li.active > a + ul {
+  display: block;
+}
+#header > ul > li > ul > li {
+  padding-bottom: 15px;
+}
+#header > ul > li > ul > li:first-child {
+  padding-top: 25px;
+}
+#header > ul > li > ul > li:last-child {
+  padding-bottom: 25px;
+}
+#header > ul > li > ul > li > a {
+  font-size: 15px;
+  color: #707070;
+}
+#header > ul > li > a,
+#header > ul > li > ul > li > a {
+  position: relative;
+  font-weight: 500;
+}
+#header > ul > li > a::before,
+#header > ul > li > ul > li > a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -3px;
+  left: 0;
+  transition: .3s;
+  background: #d02220;
+}
+#header > ul > li > a:hover,
+#header > ul > li > ul > li > a:hover {
+  color: #d02220;
+}
+#header > ul > li > a:hover:before,
+#header > ul > li > ul > li > a:hover:before,
+#header > ul > li.on > a:before {
+  width: 100%;
+}
+
+/* contents */
+#contents .container::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 263px;
+  height: 452px;
+  top: -250px;
+  right: -60px;
+  background-image: url("../images/main/logo_bg.png");
+  background-size: contain;
+  z-index: -1;
+}
+#contents .container > p {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #e42c2a;
+}
+#contents .container > h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #373737;
+}
+#contents .container > ul {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 22px;
+}
+#contents .container > ul > li {
+  position: relative;
+  margin-left: 12px;
+  font-size: 15px;
+  font-weight: 300;
+}
+#contents .container > ul > li:first-child::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 13px;
+  height: 14px;
+  top: 3px;
+  left: -26px;
+  background-image: url("../images/icon/home.png");
+}
+#contents .container > ul > li::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 3px;
+  height: 2px;
+  top: 10px;
+  left: -6px;
+  background-image: url("../images/blt/blt01.png");
+}
+#contents .container .contBox {
+  background: #fff;
+  border-top: 1px solid #e6e6e6;
+  padding-top: 70px;
+}
+#contents .container .contBox h2,
+#contents .container .contBox p {
+  color: #373737;
+}
+#contents .container .contBox p {
+  font-size: 18px;
+  font-weight: 300;
+}
+#contents .container .contBox .cont {
+  display: flex;
+}
+#contents .container .contBox .cont > div {
+  flex-grow: 1;
+}
+
+/* img */
+.cont_img1 {
+  width: 497px;
+  height: 277px;
+  background-image: url("../images/contents/cont_img1.png");
+}
+.cont_img2 {
+  width: 664px;
+  height: 268px;
+  background-image: url("../images/contents/cont_img2.png");
+}
+.cont_img3 {
+  width: 51.38vw;
+  height: 19.47vw;
+  /* width: 986px;
+  height: 374px; */
+  background-image: url("../images/contents/cont_img3.png");
+  background-size: cover;
+}
+.cont_img4 {
+  width: 589px;
+  height: 126px;
+  background-image: url("../images/contents/cont_img4.png");
+}
+.cont_img5 {
+  width: 350px;
+  height: 360px;
+  background-image: url("../images/contents/cont_img5.png");
+}
+.table_img1 {
+  width: 145px;
+  height: 60px;
+  background-image: url("../images/contents/table_img1.png");
+}
+.table_img2 {
+  width: 143px;
+  height: 45px;
+  background-image: url("../images/contents/table_img2.png");
+}
+.table_img3 {
+  width: 188px;
+  height: 63px;
+  background-image: url("../images/contents/table_img3.png");
+}

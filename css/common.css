@@ -1,0 +1,244 @@
+@charset "utf-8";
+
+/* 글꼴설정 */
+@import url('font.css');
+
+/* ==================== 프로젝트 마다 변경하기 ==================== */
+body {-webkit-text-size-adjust: 100%;}
+h1, h2, h3, h4, h5, h6, th {font-weight: normal;}
+html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, 
+p, blockquote, pre, a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp, small, strike, sub, sup,
+tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form,
+label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, figure, figcaption, 
+footer, header, hgroup, menu, nav, output, ruby, section, summary, 
+time, mark, audio, video, input, select, textarea, button {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 14px;
+	line-height: 145%;
+	font-family: 'Pretendard-Regular';
+	color: #111;
+	box-sizing: border-box;
+	letter-spacing: -0.5px;
+}
+strong {font-weight: 500;}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {display: block;}
+body {direction: ltr; line-height: 1;}
+ol, ul, dl, menu {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after, q:before, q:after {content: ''; content: none;}
+table {width: 100%; border-collapse: collapse; border-spacing: 0; table-layout: fixed;}
+caption {text-indent: 100%; overflow: hidden; white-space: nowrap;height: 0;font-size:0}
+button {border: 0 none; background-color: transparent; cursor: pointer;}
+img, input, select, textarea, button {vertical-align: middle;}
+img {max-width: 100%;}
+
+a {text-decoration: none;}
+a:hover {text-decoration: none;}
+.elli {white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.elli.type2 {
+    display: inline-block;
+    width: 85%;
+    vertical-align: top;
+    line-height: 24px;
+}
+
+input[type='text'] + input[type='checkbox'] + label, 
+input[type='password'] + input[type='checkbox'] + label, 
+input[type='file'] + input[type='checkbox'] + label, 
+select + input[type='checkbox'] + label{
+	height: 10px;
+	display: inline-block;
+}
+.checkList > span + span{
+	display: inline-block;
+	margin-left: 20px;
+}
+input[type='text'], 
+input[type='password'], 
+input[type='file'], 
+textarea, select {
+	display: inline-block; 
+	padding: 0 10px;
+	max-width: 100%;
+	height: 32px;
+	line-height: 30px;
+	border: 1px solid #d7d9dd;
+	border-radius: 2px !important;
+	background: #fff;
+	font-size: 14px;
+	font-weight: 300;
+	color: #444;
+	box-sizing: border-box;
+	-webkit-appearance: none;
+    appearance: none;
+	-webkit-border-radius: 0;
+}
+input[type='text'].fileName:disabled {
+	background: #fff !important;
+}
+
+input[type='checkbox'] + label + input[type='checkbox'] + label,
+input[type='text'] + input[type='checkbox'] + label {
+	margin-left: 8px;
+}
+
+input[type='checkbox'] {display: none;}
+input[type='checkbox'] + label {
+	position: relative;
+	padding-left: 20px;
+}
+input[type='checkbox'] + label::after {
+	position: absolute;
+	top: 1px;
+	left: 0px;
+	content: "";
+	width: 18px;
+	height: 18px;
+	border: 1px solid #d8dade;
+	border-radius: 2px;
+	display: block;
+	background-color: #fff;
+}
+input[type='checkbox']:checked + label::after {
+	background: #5f81cc url('../images/contents/icon_chk.png') no-repeat center;
+	border-color: #5f81cc;
+}
+
+input[type='radio'] + label + input[type='radio'] + label,
+input[type='text'] + input[type='radio'] + label {
+	margin-left: 8px;
+}
+
+input[type='radio'] {display: none;}
+input[type='radio'] + label {
+	position: relative;
+	padding-left: 20px;
+}
+input[type='radio'] + label::after {
+	position: absolute;
+	top: 1px;
+	left: 0;
+	content: "";
+	width: 18px;
+	height: 18px;
+	border: 1px solid #d8dade;
+	border-radius: 50%;
+	display: block;
+	background-color: #fff;
+}
+input[type='radio']:checked + label::after {
+    background: #fff url('../images/contents/icon_radio_blue.png') no-repeat center;
+    border: #d9dade solid 1px;
+}
+*[readonly='readonly'],
+*[disabled='disabled'] {
+	background-color: #f2f2f2 !important;
+	border-color: #ddd !important;
+	opacity: 100;
+}
+textarea {
+	width: 100%;
+	min-height: 100px;
+	line-height: 22px;
+	padding: 6px 12px;
+}
+
+select {
+    background: #fff url('../images/contents/icon_select.png') no-repeat calc(100% - 10px) center !important;
+	padding-right: 22px;
+	border: 1px solid #d7d9df;
+    border-radius: 2px;
+	font-size: 14px;
+	font-weight: 300;
+	color: #444;
+	box-sizing: border-box;
+	height: 32px;
+	line-height: 30px;
+	vertical-align: middle;
+}
+select::-ms-expand {display: none;}
+
+input::-webkit-input-placeholder {color: #999;}		/* 크롬 4–56 */
+input:-moz-placeholder {color: #999; opacity: 1;}		/* 파이어폭스 4–18 */
+input::-moz-placeholder {color: #999; opacity: 1;}		/* 파이어폭스 19–50 */
+input:-ms-input-placeholder {color: #999;}				/* 인터넷 익스플로러 10+ */
+input::placeholder {color: #999; opacity: 1;}			/* 파이어폭스 51+, 크롬 57+ */
+
+.rLine {border-right: #d7d9dd solid 1px !important;}
+
+input[type="file"] + label {
+    display: inline-block;
+    border-radius: 2px;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: #4d4d4d;
+    cursor: pointer;
+    vertical-align: top;
+    padding: 0px 13px;
+    color: #fff;
+    line-height: 30px;
+	margin-left: 2px; 
+}
+.fileName {border-radius: 2px;}
+.fileName + [class^="btn_"], input[type="text"] + [class^="btn_"] {
+	margin-left: 2px;
+}
+/* display */
+.df {display: flex !important;} 
+
+/* justify-content */
+.jcc {justify-content: center !important;}
+.jcfe {justify-content: flex-end !important;}
+
+/* flex-direction */
+.fdcr {flex-direction: column-reverse !important;}
+.fdc {flex-direction: column !important;}
+
+/* margin center */
+.mc {margin: 0 auto !important;}
+.mr {margin: auto 0 auto auto !important;}
+
+/* text-align */
+.tal {text-align: left !important;}
+
+/* font-size */
+.fs17 {font-size: 17px !important;}
+.fs18 {font-size: 18px !important;}
+.fs20 {font-size: 20px !important;}
+.fs25 {font-size: 25px !important;}
+
+/* font-weight */
+.fw100 {font-weight: 100 !important;}
+.fw200 {font-weight: 200 !important;}
+.fw300 {font-weight: 300 !important;}
+.fw400 {font-weight: 400 !important;}
+.fw500 {font-weight: 500 !important;}
+.fw600 {font-weight: 600 !important;}
+.fw700 {font-weight: 700 !important;}
+.fw800 {font-weight: 800 !important;}
+.fw900 {font-weight: 900 !important;}
+
+/* margin-top */
+.mt05 {margin-top: 5px !important;}
+.mt40 {margin-top: 40px !important;}
+.mt50 {margin-top: 50px !important;}
+
+/* margin-bottom */
+.mb30 {margin-bottom: 30px !important;}
+.mb55 {margin-bottom: 55px !important;}
+.mb120 {margin-bottom: 120px !important;}
+
+/* padding-top */
+.pt50 {padding-top: 50px !important;}
+.pt52 {padding-top: 52px !important;}
+
+/* padding-left */
+.pl20 {padding-left: 20px !important;}
+
+/* color */
+.fcR1 {color: #dd413f !important;}

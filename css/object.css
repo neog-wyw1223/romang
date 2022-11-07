@@ -1,0 +1,51 @@
+/* tblType01 */
+.tblType01 {
+  border-top: 1px solid #e8d7d7;
+  position: relative;
+}
+.tblType01 > table > thead > tr {
+  border-bottom: 1px solid #e8d7d7;
+}
+.tblType01 > table > tbody > tr {
+  border-bottom: 1px solid #e5e5e5;
+}
+.tblType01 > table > thead > tr > th {
+  border-right: 1px solid #e8d7d7;
+}
+.tblType01 > table > tbody > tr > th,
+.tblType01 > table > tbody > tr > td {
+  border-right: 1px solid #e5e5e5;
+  padding: 30px 40px 30px 20px;
+  text-align: left;
+}
+.tblType01 > table > thead > tr > th,
+.tblType01 > table > tbody > tr > th {
+  font-size: 15px;
+  font-weight: 300;
+}
+.tblType01 > table > thead > tr > th {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 18px 0;
+  background-color: #fcf6f6;
+}
+.tblType01 > table > tbody > tr > th {
+  background-color: #f3f5f7;
+}
+[class^="tblType"] th:last-child,
+[class^="tblType"] td:last-child {
+  border-right: none;
+}
+[class^="tblType"].type2 table th,
+[class^="tblType"].type2 table td {
+  text-align: center;
+}
+/* tblType01 */
+
+.bltList01 > li {
+  background: url("../images/blt/blt01.png") no-repeat 2px 10px;
+  padding: 0 0 0 10px;
+  margin-bottom: 12px;
+  font-size: 15px;
+  text-align-last: left;
+}
