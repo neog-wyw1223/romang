@@ -63,7 +63,7 @@
   position: absolute;
   width: 0;
   height: 2px;
-  bottom: -3px;
+  bottom: -2px;
   left: 0;
   transition: .3s;
   background: #d02220;
@@ -331,4 +331,174 @@
   top: 10px;
   left: -10px;
   background-image: url(../images/blt/blt01.png);
+}
+
+/* roadMapItem */
+.roadMap {
+  height: 450px;
+}
+.roadMap .roadMapItem {
+  position: relative;
+  width: 170px;
+}
+.roadMap .roadMapItem::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 87px;
+  height: 107px;
+  top: 6%;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  background-image: url("../images/contents/point_img2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.roadMap .roadMapItem.active::before {
+  background-image: url("../images/contents/point_img1.png");
+}
+.roadMap .roadMapItem .textBox {
+  position: absolute;
+  top: 8%;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  width: 71px;
+  height: 71px;
+  background: #fff;
+  border-radius: 100%;
+}
+.roadMap .roadMapItem .textBox p {
+  position: absolute;
+  top: 18%;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  line-height: 22px;
+}
+.roadMap .roadMapItem:nth-child(3) .textBox p {
+  top: 30%;
+}
+.roadMap .roadMapItem .textBox::before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 170%;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  margin: 0 auto;
+  width: 12px;
+  height: 12px;
+  border: 2px solid #e0e0e0;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background: #fff;
+}
+.roadMap .roadMapItem.active .textBox::before {
+  border-color: #e42c2a;
+}
+.roadMap .roadMapItem .textBox::after {
+  position: absolute;
+  top: 177%;
+  left: 50%;
+  content: "";
+  display: block;
+  width: 170px;
+  height: 1px;
+  background: #e5e5e5;
+}
+.roadMap .roadMapItem:last-child .textBox:after {
+  display: none;
+}
+.roadMap .roadMapItem > ul {
+  position: absolute;
+  top: 39%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.roadMap .roadMapItem > ul > li {
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+.roadMap .roadMapItem.active > ul > li {
+  font-weight: 500;
+}
+
+/* profile */
+.profile {
+  width: 490px;
+  height: 590px;
+  background: #fafafa;
+  border: 1px solid #ececec;
+}
+.profile:hover {
+  border: 4px solid #9a7f62;
+}
+.profile .ctaImg {
+  height: 60%;
+}
+.profile .ctaImg1::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/contents/ctaImg1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.profile .ctaImg2::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/contents/ctaImg2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.profile .ctaIntroduce {
+  text-align: left;
+  padding: 40px 40px 0;
+}
+.profile .ctaIntroduce .name {
+  position: relative;
+}
+.profile .ctaIntroduce .cross {
+  position: relative;
+  width: 30px;
+  height: 2px;
+  background: #bebebe;
+}
+.profile:hover .ctaIntroduce .cross {
+  background: #9a7f62;
+}
+.profile .ctaIntroduce .cross::before {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 30px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: #bebebe;
+}
+.profile:hover .ctaIntroduce .cross::before {
+  background: #9a7f62;
+}
+.profile .ctaIntroduce .name::before {
+  content: "";
+  display: block;
+  width: 77px;
+  height: 1px;
+  background: #c7c7c7;
+  position: absolute;
+  left: 0;
+  top: 100%;
 }

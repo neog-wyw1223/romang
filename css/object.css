@@ -82,6 +82,9 @@
 .tblType02 > table > tbody > tr > th {
   background-color: #f3f5f7;
 }
+.tblType02.bgType01 > table > tbody > tr > th {
+  background-color: #fcf6f6;
+}
 [class^="tblType"] th:last-child,
 [class^="tblType"] td:last-child {
   border-right: none;
