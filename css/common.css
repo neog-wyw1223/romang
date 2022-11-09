@@ -3,7 +3,9 @@
 /* 글꼴설정 */
 @import url('font.css');
 
-body {overflow: hidden;}
+body {
+	overflow: hidden;
+}
 
 /* ==================== 프로젝트 마다 변경하기 ==================== */
 body {-webkit-text-size-adjust: 100%;}
@@ -41,13 +43,6 @@ img {max-width: 100%;}
 
 a {text-decoration: none;}
 a:hover {text-decoration: none;}
-.elli {white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
-.elli.type2 {
-    display: inline-block;
-    width: 85%;
-    vertical-align: top;
-    line-height: 24px;
-}
 
 input[type='text'] + input[type='checkbox'] + label, 
 input[type='password'] + input[type='checkbox'] + label, 
@@ -77,22 +72,8 @@ textarea, select {
 	color: #444;
 	box-sizing: border-box;
 	-webkit-appearance: none;
-    appearance: none;
+	appearance: none;
 	-webkit-border-radius: 0;
-}
-input[type='text'].fileName:disabled {
-	background: #fff !important;
-}
-
-input[type='checkbox'] + label + input[type='checkbox'] + label,
-input[type='text'] + input[type='checkbox'] + label {
-	margin-left: 8px;
-}
-
-input[type='checkbox'] {display: none;}
-input[type='checkbox'] + label {
-	position: relative;
-	padding-left: 20px;
 }
 input[type='checkbox'] + label::after {
 	position: absolute;
@@ -106,42 +87,31 @@ input[type='checkbox'] + label::after {
 	display: block;
 	background-color: #fff;
 }
-input[type='checkbox']:checked + label::after {
-	background: #5f81cc url('../images/contents/icon_chk.png') no-repeat center;
-	border-color: #5f81cc;
+input[type='radio'] {
+	display: none;
+	/* position: relative;
+  appearance: none;
+	width: 20px;
+	height: 20px;
+	box-sizing: border-box;
+	border: 1px solid #e53836;
+	border-radius: 20px; */
 }
-
-input[type='radio'] + label + input[type='radio'] + label,
-input[type='text'] + input[type='radio'] + label {
-	margin-left: 8px;
-}
-
-input[type='radio'] {display: none;}
-input[type='radio'] + label {
-	position: relative;
-	padding-left: 20px;
-}
-input[type='radio'] + label::after {
+input[type='radio']::before {
 	position: absolute;
-	top: 1px;
-	left: 0;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 8px;
+	height: 8px;
 	content: "";
-	width: 18px;
-	height: 18px;
-	border: 1px solid #d8dade;
-	border-radius: 50%;
 	display: block;
-	background-color: #fff;
+	background-image: url("../images/icon/dot1.gif");
+	background-repeat: no-repeat;
+	background-position: center;
 }
-input[type='radio']:checked + label::after {
-    background: #fff url('../images/contents/icon_radio_blue.png') no-repeat center;
-    border: #d9dade solid 1px;
-}
-*[readonly='readonly'],
-*[disabled='disabled'] {
-	background-color: #f2f2f2 !important;
-	border-color: #ddd !important;
-	opacity: 100;
+input[type='radio'] + label {
+	font-size: 17px;
 }
 textarea {
 	width: 100%;
@@ -150,19 +120,6 @@ textarea {
 	padding: 6px 12px;
 }
 
-select {
-    background: #fff url('../images/contents/icon_select.png') no-repeat calc(100% - 10px) center !important;
-	padding-right: 22px;
-	border: 1px solid #d7d9df;
-    border-radius: 2px;
-	font-size: 14px;
-	font-weight: 300;
-	color: #444;
-	box-sizing: border-box;
-	height: 32px;
-	line-height: 30px;
-	vertical-align: middle;
-}
 select::-ms-expand {display: none;}
 
 input::-webkit-input-placeholder {color: #999;}		/* 크롬 4–56 */
@@ -170,26 +127,6 @@ input:-moz-placeholder {color: #999; opacity: 1;}		/* 파이어폭스 4–18 */
 input::-moz-placeholder {color: #999; opacity: 1;}		/* 파이어폭스 19–50 */
 input:-ms-input-placeholder {color: #999;}				/* 인터넷 익스플로러 10+ */
 input::placeholder {color: #999; opacity: 1;}			/* 파이어폭스 51+, 크롬 57+ */
-
-.rLine {border-right: #d7d9dd solid 1px !important;}
-
-input[type="file"] + label {
-    display: inline-block;
-    border-radius: 2px;
-    text-align: center;
-    box-sizing: border-box;
-    background-color: #4d4d4d;
-    cursor: pointer;
-    vertical-align: top;
-    padding: 0px 13px;
-    color: #fff;
-    line-height: 30px;
-	margin-left: 2px; 
-}
-.fileName {border-radius: 2px;}
-.fileName + [class^="btn_"], input[type="text"] + [class^="btn_"] {
-	margin-left: 2px;
-}
 
 /* position center */
 .poac {
@@ -203,6 +140,10 @@ input[type="file"] + label {
 .w10 {width: 10%;}
 .w20 {width: 20%;}
 .w100 {width: 100%;}
+.w50 {width: 50%;}
+
+.w110px {width: 110px;}
+.w200px {width: 200px;}
 
 /* height */
 .h210 {height: 210px;}

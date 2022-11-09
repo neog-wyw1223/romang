@@ -1,3 +1,15 @@
+/* dot */
+.dot p::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 3px;
+  height: 2px;
+  top: 10px;
+  left: -10px;
+  background-image: url(../images/blt/blt01.png);
+}
+
 /* tblType01 */
 .tblType01 {
   border-top: 1px solid #e8d7d7;

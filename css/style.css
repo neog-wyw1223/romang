@@ -3,246 +3,45 @@
 @import url('layout.css');
 @import url('object.css');
 
-/* header */
-#header > h1 {
-  width: 212px;
-  height: 57px;
+/* 로망 소개 */
+/* 01romangIntroduce_03 */
+.rI03 .cont1 {
+  justify-content: space-between;
 }
-#header > h1 > a {
-  display: block;
-  width: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-image: url("../images/main/logo.png");
+.rI03 .cont1 .left {
+  text-align-last: left;
 }
-#header li.on > a {
-  color: #d02220;
-}
-#header > ul > li {
-  margin-bottom: 30px;
-  cursor: pointer;
-}
-#header > ul > li > ul {
-  overflow: hidden;
-  margin-top: 30px;
-  width: 100%;
-  background: #fafafa;
-  display: none;
-}
-#header > ul > li > a {
-  font-size: 17px;
-  color: #373737;
-}
-#header > ul > li.active > a + ul {
-  display: block;
-}
-#header > ul > li > ul > li {
-  padding-bottom: 15px;
-}
-#header > ul > li > ul > li:first-child {
-  padding-top: 25px;
-}
-#header > ul > li > ul > li:last-child {
-  padding-bottom: 25px;
-}
-#header > ul > li > ul > li > a {
-  font-size: 15px;
-  color: #707070;
-}
-#header > ul > li > a,
-#header > ul > li > ul > li > a {
-  position: relative;
-  font-weight: 500;
-}
-#header > ul > li > a::before,
-#header > ul > li > ul > li > a::before {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: -2px;
-  left: 0;
-  transition: .3s;
-  background: #d02220;
-}
-#header > ul > li:hover > a,
-#header > ul > li > ul > li:hover > a {
-  color: #d02220;
-}
-#header > ul > li:hover > a:before,
-#header > ul > li > ul > li:hover > a:before,
-#header > ul > li.on > a:before {
-  width: 100%;
-}
-
-/* contents */
-#contents .container::before {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 263px;
-  height: 452px;
-  top: -250px;
-  right: -60px;
-  background-image: url("../images/main/logo_bg.png");
-  background-size: contain;
-  z-index: -1;
-}
-#contents .container > p {
-  font-size: 16px;
-  font-weight: 600;
-  letter-spacing: 1px;
-  color: #e42c2a;
-}
-#contents .container > h1 {
-  font-size: 40px;
+.rI03 .cont1 .left h2 {
+  font-size: 25px;
   font-weight: 700;
-  color: #373737;
+  margin-bottom: 30px;
 }
-#contents .container > ul {
-  display: flex;
-  justify-content: flex-end;
-  margin-right: 22px;
+.rI03 .cont1 .left p {
+  margin-bottom: 30px;
 }
-#contents .container > ul > li {
-  position: relative;
-  margin-left: 12px;
-  font-size: 15px;
-  font-weight: 300;
+.rI03 .cont2, 
+.rI03 .cont3,
+.rI03 .cont4 {
+  flex-direction: column;
 }
-#contents .container > ul > li:first-child::after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 13px;
-  height: 14px;
-  top: 3px;
-  left: -26px;
-  background-image: url("../images/icon/home.png");
-}
-#contents .container > ul > li::before {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 3px;
-  height: 2px;
-  top: 10px;
-  left: -6px;
-  background-image: url("../images/blt/blt01.png");
-}
-#contents .container .contBox {
-  background: #fff;
-  border-top: 1px solid #e6e6e6;
-  padding-top: 70px;
-}
-#contents .container .contBox h2,
-#contents .container .contBox p {
-  color: #373737;
-}
-#contents .container .contBox p {
-  font-size: 18px;
-  font-weight: 300;
-}
-#contents .container .contBox .cont {
-  display: flex;
-}
-#contents .container .contBox .cont > div {
-  flex-grow: 1;
+.rI03 .cont2 p, 
+.rI03 .cont3 p,
+.rI03 .cont4 p {
+  padding-top: 50px;
 }
 
-/* img */
-.cont_img1 {
-  width: 497px;
-  height: 277px;
-  background-image: url("../images/contents/cont_img1.png");
-}
-.cont_img2 {
-  width: 664px;
-  height: 268px;
-  background-image: url("../images/contents/cont_img2.png");
-}
-.cont_img3 {
-  width: 51.38vw;
-  height: 19.47vw;
-  /* width: 986px;
-  height: 374px; */
-  background-image: url("../images/contents/cont_img3.png");
-  background-size: cover;
-}
-.cont_img4 {
-  width: 589px;
-  height: 126px;
-  background-image: url("../images/contents/cont_img4.png");
-}
-.cont_img5 {
-  width: 350px;
-  height: 360px;
-  background-image: url("../images/contents/cont_img5.png");
-}
-.cont_img6 {
-  width: 161px;
-  height: 161px;
-  background-image: url("../images/contents/cont_img6.png");
-}
-.cont_img7 {
-  width: 669px;
-  height: 126px;
-  background-image: url("../images/contents/cont_img7.png");
-}
-.cont_img8 {
-  width: 537px;
-  height: 354px;
-  background-repeat: no-repeat;
-  background-image: url("../images/contents/cont_img8.png");
-}
-.cont_img9 {
-  width: 810px;
-  height: 341px;
-  background-repeat: no-repeat;
-  background-image: url("../images/contents/cont_img9.png");
-}
-.cont_img10 {
-  width: 421px;
-  height: 348px;
-  background-repeat: no-repeat;
-  background-image: url("../images/contents/cont_img10.png");
-}
-.cont_background1 {
-  width: 100%;
-  height: 211px;
-  background-size: cover;
-  padding: 40px 150px 0;
-  background-image: url("../images/contents/cont_background1.png");
-}
-.table_img1 {
-  width: 145px;
-  height: 60px;
-  background-image: url("../images/contents/table_img1.png");
-}
-.table_img2 {
-  width: 143px;
-  height: 45px;
-  background-image: url("../images/contents/table_img2.png");
-}
-.table_img3 {
-  width: 188px;
-  height: 63px;
-  background-image: url("../images/contents/table_img3.png");
-}
 
-/* tab */
-.tab01 {
+/* 로망 서비스 */
+/* 02romgangService_COMMON */
+.rS .tab1 {
   justify-content: center;
 }
-.tab01 li.on a,
-.tab01 li:hover a {
+.rS .tab1 li.on a,
+.rS .tab1 li:hover a {
   background: #e42c2a;
   color: #fff;
 }
-.tab01 li a {
+.rS .tab1 li a {
   display: block;
   color: #696969;
   border: 1px solid #e42c2a;
@@ -255,59 +54,119 @@
   line-height: 52px;
   font-weight: 400;
 }
-
-/* line */
-.lbType01::before {
-  content: "";
-  display: block;
+.rS .cont1,
+.rS .cont2 {
+  flex-direction: column;
+}
+.rS .cont1 h2 {
+  font-size: 34px;
+  font-weight: 500;
+  position: relative;
+}
+.rS .cont1 h2::before {
   position: absolute;
-  width: 20px;
-  height: 1px;
   left: 50%;
   bottom: -15px;
+  content: "";
+  display: block;
+  width: 20px;
+  height: 1px;
   transform: translate(-50%, 0);
   background: #555555;
 }
-
-/* .lbType02::before {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 800px;
-  height: 1px;
-  left: 50%;
-  bottom: 0;
-  transform: translate(-50%, 0);
-  background: #dadada;
-} */
-.lbType02 {
+.rS .cont1 p:nth-child(2) {
+  margin-top: 40px;
+}
+.rS .cont1 p {
+  margin-top: 10px;
+}
+.rS .cont1 p:last-child {
+  margin-top: 20px;
+  font-size: 22px !important;
+  font-weight: 500 !important;
   text-decoration: underline 1px #dadada;
   text-underline-position: under;
 }
-
-.vLine {
+.rS .cont2 ul:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rS .cont2 p:first-child,
+.rS .cont2 ul:first-child {
+  margin-bottom: 25px;
+}
+.rS .cont2 > p:first-child,
+.rS .cont2 ul:first-child > li {
+  font-size: 24px !important;
+  font-weight: 400 !important;
+}
+.rS .cont2 ul:first-child > li:first-child,
+.rS .cont2 ul:first-child > li:last-child {
   width: 12px;
   height: 1px;
   background: #9b9b9b;
   margin: 0 8px;
 }
-
-/* border content style1 */
-.bcont1 li {
-  padding: 30px 70px;
-  font-size: 20px;
-  font-weight: 600;
+.rS .cont2 > p > span,
+.rS .cont2 > ul > li > span {
+  color: #dd413f;
 }
-
-/* btn style */
-.btnType01 {
+.teamIntro {
+  flex-direction: column;
+}
+.teamIntro li:nth-child(1),
+.teamIntro li:nth-child(2) {
+  font-size: 24px;
+  font-weight: 400;
+}
+.teamIntro li:nth-child(2) {
+  margin-bottom: 30px;
+}
+.teamIntro li:nth-child(3) {
+  margin-bottom: 15px;
+}
+.teamIntro li:nth-child(4) {
+  color: #777;
+  font-weight: 300;
+  font-size: 15px;
+}
+.consultingLink {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 210px;
+  flex-direction: column;
+  background: #000;
+}
+.consultingLink::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/contents/cont_background1.png");
+  background-size: cover;
+}
+.consultingLink li:nth-child(1) {
+  color: #fff;
+  font-size: 23px;
+  z-index: 1;
+  margin-bottom: 30px;
+}
+.consultingLink li:nth-child(2) {
   position: relative;
   width: 185px;
   height: 45px;
   border-radius: 30px;
   background: #fff;
+  z-index: 1;
 }
-.btnType01 > a {
+.consultingLink li:nth-child(2) a {
   position: absolute;
   top: -5%;
   display: block;
@@ -315,33 +174,65 @@
   width: 100%;
   line-height: 45px;
   background: #d02220;
+  font-size: 19px;
+  font-weight: 700;
+  color: #fff;
 }
-.btnType01:hover > a {
+.consultingLink li:nth-child(2) a:hover {
   top: 0;
   box-shadow: inset 1px 3px 3px #8f0f0d;
 }
 
-/* blt */
-.blt01::before {
-  content: "";
-  display: block;
+/* 02romgangService_01 */
+.rS01 .cont2 p.small {
+  color: #777 !important;
+  font-size: 15px !important;
+  text-align: left;
+}
+.rS01 ul.cont3 {
+  flex-wrap: wrap;
+  position: relative;
+}
+.rS01 ul.cont3 li {
+  flex-basis: 50%;
+  border-top: 1px solid #e9e9e9;
+  border-left: 1px solid #e9e9e9;
+  padding: 30px 70px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.rS01 ul.cont3 li span {
+  font-size: 17px;
+  font-weight: 300;
+}
+.rS01 ul.cont3 li:nth-child(1),
+.rS01 ul.cont3 li:nth-child(3) {
+  border-left: unset;
+}
+.rS01 ul.cont3 li:nth-child(3),
+.rS01 ul.cont3 li:nth-child(4) {
+  border-bottom: 1px solid #e9e9e9;
+}
+.rS01 ul.cont3 li:last-child {
   position: absolute;
-  width: 3px;
-  height: 2px;
-  top: 10px;
-  left: -10px;
-  background-image: url(../images/blt/blt01.png);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  flex-basis: unset;
+  border: unset;
 }
 
-/* roadMapItem */
-.roadMap {
-  height: 450px;
+/* 02romgangService_02 */
+.rS02 .cont2 .roadMap {
+  display: flex;
+  justify-content: center;
+  height: 360px;
 }
-.roadMap .roadMapItem {
+.rS02 .cont2 .roadMap .roadMapItem {
   position: relative;
   width: 170px;
 }
-.roadMap .roadMapItem::before {
+.rS02 .cont2 .roadMap .roadMapItem::before {
   content: "";
   display: block;
   position: absolute;
@@ -356,10 +247,10 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-.roadMap .roadMapItem.active::before {
+.rS02 .cont2 .roadMap .roadMapItem.active::before {
   background-image: url("../images/contents/point_img1.png");
 }
-.roadMap .roadMapItem .textBox {
+.rS02 .cont2 .roadMap .roadMapItem .textBox {
   position: absolute;
   top: 8%;
   right: 0;
@@ -370,18 +261,19 @@
   background: #fff;
   border-radius: 100%;
 }
-.roadMap .roadMapItem .textBox p {
+.rS02 .cont2 .roadMap .roadMapItem .textBox p {
   position: absolute;
   top: 18%;
   right: 0;
   left: 0;
   margin: 0 auto;
   line-height: 22px;
+  font-weight: 500 !important;
 }
-.roadMap .roadMapItem:nth-child(3) .textBox p {
+.rS02 .cont2 .roadMap .roadMapItem:nth-child(3) .textBox p {
   top: 30%;
 }
-.roadMap .roadMapItem .textBox::before {
+.rS02 .cont2 .roadMap .roadMapItem .textBox::before {
   position: absolute;
   content: "";
   display: block;
@@ -397,10 +289,10 @@
   border-radius: 50%;
   background: #fff;
 }
-.roadMap .roadMapItem.active .textBox::before {
+.rS02 .cont2 .roadMap .roadMapItem.active .textBox::before {
   border-color: #e42c2a;
 }
-.roadMap .roadMapItem .textBox::after {
+.rS02 .cont2 .roadMap .roadMapItem .textBox::after {
   position: absolute;
   top: 177%;
   left: 50%;
@@ -410,39 +302,40 @@
   height: 1px;
   background: #e5e5e5;
 }
-.roadMap .roadMapItem:last-child .textBox:after {
+.rS02 .cont2 .roadMap .roadMapItem:last-child .textBox:after {
   display: none;
 }
-.roadMap .roadMapItem > ul {
+.rS02 .cont2 .roadMap .roadMapItem > ul {
   position: absolute;
-  top: 39%;
+  top: 48%;
   left: 0;
   right: 0;
   margin: 0 auto;
 }
-.roadMap .roadMapItem > ul > li {
+.rS02 .cont2 .roadMap .roadMapItem > ul > li {
   font-size: 16px;
   font-weight: 300;
   margin-bottom: 10px;
 }
-.roadMap .roadMapItem.active > ul > li {
+.rS02 .cont2 .roadMap .roadMapItem.active > ul > li {
   font-weight: 500;
 }
-
-/* profile */
-.profile {
+.rS02 .cont3 {
+  justify-content: space-between;
+}
+.rS02 .cont3 .profile {
   width: 490px;
   height: 590px;
   background: #fafafa;
   border: 1px solid #ececec;
 }
-.profile:hover {
+.rS02 .cont3 .profile:hover {
   border: 4px solid #9a7f62;
 }
-.profile .ctaImg {
+.rS02 .cont3 .profile .ctaImg {
   height: 60%;
 }
-.profile .ctaImg1::before {
+.rS02 .cont3 .profile .ctaImg1::before {
   content: "";
   display: block;
   width: 100%;
@@ -452,7 +345,7 @@
   background-position: center;
   background-repeat: no-repeat;
 }
-.profile .ctaImg2::before {
+.rS02 .cont3 .profile .ctaImg2::before {
   content: "";
   display: block;
   width: 100%;
@@ -462,23 +355,40 @@
   background-position: center;
   background-repeat: no-repeat;
 }
-.profile .ctaIntroduce {
+.rS02 .cont3 .profile .ctaIntroduce {
   text-align: left;
   padding: 40px 40px 0;
 }
-.profile .ctaIntroduce .name {
-  position: relative;
+.rS02 .cont3 .profile .ctaIntroduce > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.profile .ctaIntroduce .cross {
+.rS02 .cont3 .profile .ctaIntroduce > p {
+  font-size: 16px !important;
+  color: #888 !important;
+  font-weight: 400 !important;
+  margin-top: 20px !important;
+} 
+.rS02 .cont3 .profile .ctaIntroduce .name {
+  position: relative;
+  font-size: 30px !important;
+  font-weight: 600 !important;
+}
+.rS02 .cont3 .profile .ctaIntroduce .name span {
+  color: #9a7f62 !important;
+  font-size: 20px !important;
+}
+.rS02 .cont3 .profile .ctaIntroduce .cross {
   position: relative;
   width: 30px;
   height: 2px;
   background: #bebebe;
 }
-.profile:hover .ctaIntroduce .cross {
+.rS02 .cont3 .profile:hover .ctaIntroduce .cross {
   background: #9a7f62;
 }
-.profile .ctaIntroduce .cross::before {
+.rS02 .cont3 .profile .ctaIntroduce .cross::before {
   content: "";
   display: block;
   width: 2px;
@@ -489,10 +399,10 @@
   transform: translate(-50%, -50%);
   background: #bebebe;
 }
-.profile:hover .ctaIntroduce .cross::before {
+.rS02 .cont3 .profile:hover .ctaIntroduce .cross::before {
   background: #9a7f62;
 }
-.profile .ctaIntroduce .name::before {
+.rS02 .cont3 .profile .ctaIntroduce .name::before {
   content: "";
   display: block;
   width: 77px;
@@ -501,4 +411,49 @@
   position: absolute;
   left: 0;
   top: 100%;
+}
+
+
+/* 02romgangService_03 */
+.rS03 .cont2 .flex {
+  display: flex;
+  align-items: center;
+}
+.rS03 .cont2 .flex .right {
+  text-align: left;
+  padding: 15px 0 0 20px;
+}
+.rS03 .cont2 .flex .right p {
+  margin-bottom: 50px;
+  font-size: 18px !important;
+  font-weight: 400 !important;
+}
+.rS03 .cont3 {
+  flex-direction: column;
+  align-items: center;
+}
+.rS03 .cont3 > p {
+  font-size: 24px !important;
+  font-weight: 400 !important;
+  margin-bottom: 40px;
+}
+.rS03 .cont3 figure {
+  padding: 0 20px;
+  margin-bottom: 100px;
+}
+
+/* 02romgangService_04 */
+.rS04 .cont2 .flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.rS04 .cont2 .flex .right {
+  text-align: left;
+  padding: 15px 0 0 20px;
+}
+.rS04 .cont2 .flex .right p {
+  position: relative;
+  margin-bottom: 15px !important;
+  font-size: 18px !important;
 }
