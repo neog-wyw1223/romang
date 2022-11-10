@@ -12,7 +12,7 @@
   min-width: 300px;
   background: #fff;
   z-index: 9999;
-  box-shadow: 1px 0 5px rgba(0, 0, 0, .3);
+  box-shadow: 1px 0 5px rgba(18, 29, 39, .2);
 }
 #header > h1 {
   margin: 98px 0 0 16px;
@@ -30,6 +30,7 @@
 }
 #header > ul {
   padding-top: 69px;
+  margin-top: 10px;
 }
 #header > ul > li {
   margin-bottom: 30px;
@@ -96,6 +97,9 @@
 #header li.on > a {
   color: #d02220;
 }
+@media screen and (max-width: 1280px) {
+  #header {display: none;}
+}
 
 /* contents */
 #contents {
@@ -138,6 +142,7 @@
   display: flex;
   justify-content: flex-end;
   margin-right: 22px;
+  margin-bottom: 5px;
 }
 #contents .container > ul > li {
   position: relative;
@@ -184,4 +189,19 @@
 }
 #contents .container .contBox .cont > div {
   flex-grow: 1;
+}
+
+@media screen and (max-width: 1280px) {
+  #contents .container {
+    padding: 45px 0 0;
+    margin: 0 auto;
+  }
+  #contents .container::before {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  #contents {
+    padding-top: 0;
+  }
 }
