@@ -159,69 +159,15 @@
   margin-bottom: 30px;
 }
 .teamIntro li:nth-child(3) {
-  margin-bottom: 15px;
+  margin: 0 auto;
 }
 .teamIntro li:nth-child(4) {
   color: #777;
   font-weight: 300;
   font-size: 15px;
+  margin-top: 15px;
 }
-.consultingLink {
-  position: relative;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 210px;
-  flex-direction: column;
-  background: #000;
-}
-.consultingLink::before {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  content: "";
-  display: block;
-  width: 100%;
-  height: 100%;
-  background-image: url("../images/contents/cont_background1.png");
-  background-size: cover;
-}
-.consultingLink li {
-  margin: 0 20px 30px;
-  margin-bottom: 30px;
-}
-.consultingLink li:nth-child(1) {
-  color: #fff;
-  font-size: 23px;
-  z-index: 1;
-  margin-top: 10px;
-}
-.consultingLink li:nth-child(2) {
-  position: relative;
-  width: 185px;
-  height: 45px;
-  border-radius: 30px;
-  background: #fff;
-  z-index: 1;
-}
-.consultingLink li:nth-child(2) a {
-  position: absolute;
-  top: -5%;
-  display: block;
-  border-radius: 30px;
-  width: 100%;
-  line-height: 45px;
-  background: #d02220;
-  font-size: 19px;
-  font-weight: 700;
-  color: #fff;
-}
-.consultingLink li:nth-child(2) a:hover {
-  top: 0;
-  box-shadow: inset 1px 3px 3px #8f0f0d;
-}
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1179px) {
   .rS .tab1 {
     flex-wrap: wrap;
   }
@@ -229,12 +175,20 @@
     flex-basis: 45%;
     width: 100%;
   }
+  .rS .tab1 li:nth-child(1),
+  .rS .tab1 li:nth-child(3) {
+    margin: 0 7px 0 0;
+  }
+  .rS .tab1 li:nth-child(2),
+  .rS .tab1 li:nth-child(4) {
+    margin: 0 0 0 7px;
+  }
   .rS .tab1 li:nth-child(3),
   .rS .tab1 li:nth-child(4) {
-    margin-top: 10px;
+    margin-top: 14px;
   }
-  .consultingLink {
-    margin-bottom: 0 !important;
+  .rS .tab1 li a {
+    font-size: 16px;
   }
   .rS .cont1 {
     margin: 0 20px 100px;
@@ -243,35 +197,28 @@
   .rS .cont2 > ul:first-child {
     margin: 0 20px 25px;
   }
+  .rS .cont2 ul:first-child > li:first-child, 
+  .rS .cont2 ul:first-child > li:last-child {display: none;}
   .teamIntro {
     margin: 100px 20px 0;
   }
 }
 @media screen and (max-width: 767px) {
-  .rS .tab1 {
-    flex-direction: column;
-  }
-  .rS .tab1 li {
-    width: 95%;
-    margin: 0 auto;
-    margin-top: 10px;
-  }
-  .consultingLink li:nth-child(1) {
-    font-size: 17px;
-  }
-}
-@media screen and (max-width: 479px) {
-  /* .consultingLink li:nth-child(1) {
-    margin-bottom: 0;
-    margin-top: 0;
-  } */
+  .rS .cont1 p {margin-top: 0; padding: 0 20px;}
 }
 
 /* 02romgangService_01 */
 .rS01 .cont2 p.small {
+  position: relative;
   color: #777 !important;
   font-size: 15px !important;
   text-align: left;
+  padding-left: 10px;
+}
+.rS01 .cont2 p.small::before {
+  content: "※";
+  position: absolute;
+  left: 0;
 }
 .rS01 ul.cont3 {
   flex-wrap: wrap;
@@ -305,7 +252,7 @@
   flex-basis: unset;
   border: unset;
 }
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1179px) {
   .rS01 .cont2 p.small {
     margin: 0 20px;
   }
@@ -315,22 +262,7 @@
 }
 @media screen and (max-width: 767px) {
   .rS01 ul.cont3 {
-    flex-direction: column;
-  }
-  .rS01 ul.cont3 li {
-    padding: 20px;
-  }
-  .rS01 ul.cont3 li span br {
-    display: none;
-  }
-  .rS01 ul.cont3 li:nth-child(3) {
-    padding-bottom: 85px;
-  }
-  .rS01 ul.cont3 li:nth-child(4) {
-    padding-top: 85px;
-  }
-  .rS01 ul.cont3 li:first-child img {
-    width: 90%;
+    display: none !important;
   }
 }
 
