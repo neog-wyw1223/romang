@@ -4,6 +4,120 @@
 @import url('object.css');
 
 /* 로망 소개 */
+/* 01romangIntroduce_01 */
+.container.pz {
+  padding: 45px 0 0 !important;
+}
+.container.pz > .contBox {
+  padding: 70px 0 0 !important;
+}
+.rI01 .cont1 {
+  position: relative;
+  display: flex;
+  margin-bottom: 0 !important;
+  overflow: hidden;
+}
+.rI01 .cont1 > img {
+  width: 39%;
+  position: absolute;
+  height: inherit;
+  left: 3%;
+  bottom: -7%;
+}
+.rI01 .cont1 .left {
+  height: inherit;
+  background-image: url("../images/contents/cont_background2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-basis: 35%;
+}
+.rI01 .cont1 .right {
+  background: #fafafa;
+  padding: 100px 65px;
+  flex-grow: 1;
+  flex-basis: 65%;
+  text-align: left;
+  word-break: keep-all;
+}
+.rI01 .cont1 .right > h2 {
+  font-size: 33px;
+  line-height: 1.3;
+  font-weight: 600;
+  margin-bottom: 40px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #c8c8c8;
+}
+.rI01 .cont1 .right > h3 {
+  font-size: 27px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 40px;
+  padding-right: 140px;
+}
+.rI01 .cont1 .right > h3 > strong {
+  font-size: 31px;
+  font-weight: 600;
+}
+.rI01 .cont1 .right > p {
+  font-size: 17px !important;
+  margin-bottom: 18px;
+}
+.rI01 .cont1 .right > p.tar.mt70 {
+  margin-top: 70px;
+}
+.rI01 .cont1 .right > p.tar {
+  text-align: right;
+  font-size: 18px !important;
+}
+.rI01 .cont1 .right > p.tar.brown {
+  font-weight: 500 !important;
+  color: #7e4d29 !important;
+}
+.rI01 .cont1 .right > p.tar > span {
+  color: #d6312f;
+  font-weight: 500;
+}
+.rI01 .cont1 .right > p.tar > strong {
+  font-size: 28px;
+  font-weight: 600;
+}
+@media screen and (max-width: 1179px) {
+  .rI01 .tab1 {
+    /* justify-content: flex-start; */
+  }
+}
+/* 01romangIntroduce_01_Slogan */
+.rI01_Slogan .cont1 {
+  display: block !important;
+}
+.rI01_Slogan .cont1 > .p1 {
+  font-size: 34px !important;
+  font-weight: 400 !important;
+  margin-bottom: 70px;
+}
+.rI01_Slogan .cont1 > img {
+  margin-bottom: 70px;
+}
+.rI01_Slogan .cont1 > .p {
+  font-weight: 400 !important;
+  font-size: 19px !important;
+}
+.rI01_Slogan .cont1 > .p.mb25 {
+  margin-bottom: 25px;
+}
+.rI01_Slogan .cont1 > .p2 {
+  font-size: 25px !important;
+  font-weight: 500 !important;
+}
+/* 01romangIntroduce_01_CI */
+.rI01_CI .cont1 {
+  display: block !important;
+}
+.rI01_CI .cont1 > h2 {font-size: 34px; font-weight: 400; margin-bottom: 30px;}
+.rI01_CI .cont1 > h2 > span {color: #d01210;}
+.rI01_CI .cont1 > p {font-size: 19px !important; font-weight: 400 !important;}
+.rI01_CI .cont1 > p.p1 {font-size: 25px !important; font-weight: 500 !important; margin: 30px 0 100px;}
+
 /* 01romangIntroduce_03 */
 .rI03 .cont1 {
   justify-content: space-between;
@@ -60,35 +174,8 @@
   
 }
 
-
 /* 로망 서비스 */
 /* 02romgangService_COMMON */
-.rS .tab1 {
-  justify-content: center;
-}
-.rS .tab1 li {
-  width: 194px;
-  border-radius: 30px 0 30px 30px;
-  margin: 0 7.5px;
-}
-.rS .tab1 li.on a,
-.rS .tab1 li:hover a {
-  background: #e42c2a;
-  color: #fff;
-}
-.rS .tab1 li a {
-  display: block;
-  margin: 0 auto !important;
-  color: #696969;
-  border: 1px solid #e42c2a;
-  border-radius: inherit;
-  background: #fff;
-  width: inherit;
-  height: 52px;
-  font-size: 18px;
-  line-height: 52px;
-  font-weight: 400;
-}
 .rS .cont1,
 .rS .cont2 {
   flex-direction: column;
@@ -168,28 +255,6 @@
   margin-top: 15px;
 }
 @media screen and (max-width: 1179px) {
-  .rS .tab1 {
-    flex-wrap: wrap;
-  }
-  .rS .tab1 li {
-    flex-basis: 45%;
-    width: 100%;
-  }
-  .rS .tab1 li:nth-child(1),
-  .rS .tab1 li:nth-child(3) {
-    margin: 0 7px 0 0;
-  }
-  .rS .tab1 li:nth-child(2),
-  .rS .tab1 li:nth-child(4) {
-    margin: 0 0 0 7px;
-  }
-  .rS .tab1 li:nth-child(3),
-  .rS .tab1 li:nth-child(4) {
-    margin-top: 14px;
-  }
-  .rS .tab1 li a {
-    font-size: 16px;
-  }
   .rS .cont1 {
     margin: 0 20px 100px;
   }
@@ -267,14 +332,21 @@
 }
 
 /* 02romgangService_02 */
+.rS02 .cont2 {
+  align-items: center;
+}
 .rS02 .cont2 .roadMap {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   height: 360px;
 }
 .rS02 .cont2 .roadMap .roadMapItem {
+  flex-grow: 1;
   position: relative;
   width: 170px;
+}
+.rS02 .cont2 .roadMap .roadMapItem:last-child {
+  flex-grow: 0;
 }
 .rS02 .cont2 .roadMap .roadMapItem::before {
   content: "";
@@ -366,124 +438,32 @@
 }
 .rS02 .cont3 {
   justify-content: center;
-  margin: 0 20px;
-}
-.rS02 .cont3 .profile {
-  position: relative;
-  width: 490px;
-  height: 590px;
-  background: #fafafa;
-}
-.rS02 .cont3 .profile > a {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-.rS02 .cont3 .profile:first-child {
-  margin-right: 10px;
-}
-.rS02 .cont3 .profile:last-child {
-  margin-left: 10px;
-}
-.rS02 .cont3 .profile:hover {
-  border: 4px solid #9a7f62;
-}
-.rS02 .cont3 .profile .ctaImg {
-  height: 60%;
-  border: 1px solid #ead3d5;
-  background: #f6f2ef;
-}
-.rS02 .cont3 .profile .ctaImg1::before {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 100%;
-  background-image: url("../images/contents/ctaImg1.png");
-  background-position: bottom;
-  background-repeat: no-repeat;
-}
-.rS02 .cont3 .profile .ctaImg2::before {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 100%;
-  background-image: url("../images/contents/ctaImg2.png");
-  background-position: bottom;
-  background-repeat: no-repeat;
-}
-.rS02 .cont3 .profile .ctaIntroduce {
-  text-align: left;
-  height: 40%;
-  padding: 40px 40px 0;
-  border: 1px solid #ececec;
-  border-top: unset;
-}
-.rS02 .cont3 .profile .ctaIntroduce > div {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.rS02 .cont3 .profile .ctaIntroduce > p {
-  font-size: 16px !important;
-  color: #888 !important;
-  font-weight: 400 !important;
-  margin-top: 20px !important;
-  white-space: nowrap;
-} 
-.rS02 .cont3 .profile .ctaIntroduce .name {
-  position: relative;
-  font-size: 30px !important;
-  font-weight: 600 !important;
-}
-.rS02 .cont3 .profile .ctaIntroduce .name span {
-  color: #9a7f62 !important;
-  font-size: 20px !important;
-}
-.rS02 .cont3 .profile .ctaIntroduce .cross {
-  position: relative;
-  width: 30px;
-  height: 2px;
-  background: #bebebe;
-}
-.rS02 .cont3 .profile:hover .ctaIntroduce .cross {
-  background: #9a7f62;
-}
-.rS02 .cont3 .profile .ctaIntroduce .cross::before {
-  content: "";
-  display: block;
-  width: 2px;
-  height: 30px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  background: #bebebe;
-}
-.rS02 .cont3 .profile:hover .ctaIntroduce .cross::before {
-  background: #9a7f62;
-}
-.rS02 .cont3 .profile .ctaIntroduce .name::before {
-  content: "";
-  display: block;
-  width: 77px;
-  height: 1px;
-  background: #c7c7c7;
-  position: absolute;
-  left: 0;
-  top: 100%;
 }
 @media screen and (max-width: 767px) {
   .rS02 .cont3 {
     flex-direction: column;
   }
-  .rS02 .cont2 .roadMap .roadMapItem .textBox::after {
-    width: 147px;
+  .rS02 .cont2 .roadMap {
+    overflow: hidden;
+    flex-wrap: wrap;
+    /* justify-content: flex-start; */
+    height: 1000px;
   }
-  .rS02 .cont3 .profile {
+  .rS02 .cont2 .roadMap .roadMapItem .textBox::after {
+    left: -190%;
+    width: 500px;
+  }
+  .rS02 .cont2 .roadMap .roadMapItem:first-child .textBox:after {
+    display: none;
+  }
+  .rS02 .cont2 .roadMap .roadMapItem:nth-child(4) .textBox:after {
+    left: -410%;
+  }
+  .rS02 .cont2 .roadMap .roadMapItem:last-child .textBox:after {
+    width: 170px;
+    display: block;
+  }
+  /* .rS02 .cont3 .profile {
     width: 100%;
   }
   .rS02 .cont3 .profile:first-child {
@@ -492,18 +472,31 @@
   }
   .rS02 .cont3 .profile:last-child {
     margin-left: 0;
-  }
+  } */
+}
+@media screen and (max-width: 709px) {
+  .rS02 .cont2 .roadMap .roadMapItem .textBox::after {left: -270%; width: 550px;}
+  .rS02 .cont2 .roadMap .roadMapItem:nth-child(4){flex-grow: 0; flex-basis: 33.33%;}
+  .rS02 .cont2 .roadMap .roadMapItem:last-child {flex-grow: 0; flex-basis: 33.33%;}
+}
+@media screen and (max-width:539px) {
+  .rS02 .cont2 .roadMap .roadMapItem:nth-child(4){flex-grow: 1; flex-basis: unset;}
+  .rS02 .cont2 .roadMap .roadMapItem:last-child {flex-grow: 0; flex-basis: 50%;}
 }
 @media screen and (max-width:479px) {
   .rS02 .cont2 .roadMap .roadMapItem .textBox::after {
-    width: 97px;
+    /* width: 97px; */
   }
-  .rS02 .cont3 .profile .ctaIntroduce > p {
+  .rS02 .cont2 .roadMap .roadMapItem:last-child .textBox:after {
+    width: 100px;
+    display: block;
+  }
+  /* .rS02 .cont3 .profile .ctaIntroduce > p {
     white-space: unset;
   }
   .rS02 .cont3 .profile .ctaIntroduce > p br {
     display: none;
-  }
+  } */
 }
 
 /* 02romgangService_03 */
@@ -578,4 +571,507 @@
   .rS04 .cont2 .flex .right p br {
     display: none;
   }
+}
+
+/* 04-07 Center 센터 공통 */
+.rC .cont1 {
+  display: flex;
+  flex-direction: row !important;
+}
+.rC .cont1 > div {
+  flex: 1 !important;
+}
+.rC .cont1 .right {
+  text-align: left;
+}
+.rC .cont1 .right h2 {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.rC .cont1 .right p {
+  font-size: 18px;
+  font-weight: 300;
+}
+.rC .cont {
+  flex-direction: column;
+}
+.rC .cont h2 {
+  margin-bottom: 25px;
+  font-size: 24px;
+  font-weight: 400;
+}
+.rC .cont h2 span {
+  color: #dd413f;
+}
+.rC .tableStyle1 .item .head {
+  height: 90px;
+  padding: 18px;
+  word-break: keep-all;
+}
+.rC .tableStyle2 li {
+  margin-bottom: 30px;
+  display: flex;
+}
+.rC .tableStyle2 li > div {
+  border-radius: 3px;
+}
+.rC .tableStyle2 li .head {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 180px;
+  min-height: 80px;
+  padding: 15px;
+  border: 1px solid #bc6868;
+  background-color: #fcf6f6;
+}
+.rC .tableStyle2 li .head span {
+  margin-left: 10px;
+  font-size: 18px;
+}
+.rC .tableStyle2 li .head::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+  height: 35px;
+  display: block;
+  width: 180px;
+  background: url(../images/icon/arrow-bt.png) no-repeat center;
+}
+.rC .tableStyle2 li .body {
+  flex: 1;
+  min-height: 80px;
+  border: 1px solid #e9e9e9;
+  margin-left: 15px;
+  padding: 15px;
+  text-align: left;
+  font-size: 17px;
+  word-break: keep-all;
+}
+.rC .tableStyle2 li .body span {
+  color: #d01210;
+}
+.rC .tableStyle2 li:last-child {
+  margin: 0;
+}
+.rC .tableStyle2 li:last-child .head::before {
+  display: none;
+}
+.rC .teamIntro li:nth-child(3) img:nth-child(2) {
+  display: none;
+}
+.rC p.small {
+  color: #777 !important;
+  font-size: 15px !important;
+  text-align: left;
+}
+.rC .profileArea {
+  display: flex;
+  justify-content: center;
+  margin: 0 20px;
+}
+.rC .profileArea .profile {
+  position: relative;
+  width: 490px;
+  height: 590px;
+  background: #fafafa;
+}
+.rC .profileArea .profile > a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.rC .profileArea .profile:first-child {
+  margin-right: 10px;
+}
+.rC .profileArea .profile:last-child {
+  margin-left: 10px;
+}
+.rC .profileArea .profile:hover {
+  border: 4px solid #9a7f62;
+}
+.rC .profileArea .profile .ctaImg {
+  height: 60%;
+  border: 1px solid #ead3d5;
+  background: #f6f2ef;
+}
+.rC .profileArea .profile .ctaImg1::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/contents/ctaImg1.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+.rC .profileArea .profile .ctaImg2::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/contents/ctaImg2.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+.rC .profileArea .profile .ctaIntroduce {
+  text-align: left;
+  height: 40%;
+  padding: 40px 40px 0;
+  border: 1px solid #ececec;
+  border-top: unset;
+}
+.rC .profileArea .profile .ctaIntroduce > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.rC .profileArea .profile .ctaIntroduce > p {
+  font-size: 16px !important;
+  color: #888 !important;
+  font-weight: 400 !important;
+  margin-top: 20px !important;
+  white-space: nowrap;
+}
+.rC .profileArea .profile .ctaIntroduce .name {
+  position: relative;
+  font-size: 30px !important;
+  font-weight: 600 !important;
+}
+.rC .profileArea .profile .ctaIntroduce .name span {
+  color: #9a7f62 !important;
+  font-size: 20px !important;
+}
+.rC .profileArea .profile .ctaIntroduce .cross {
+  position: relative;
+  width: 30px;
+  height: 2px;
+  background: #bebebe;
+}
+.rC .profileArea .profile:hover .ctaIntroduce .cross {
+  background: #9a7f62;
+}
+.rC .profileArea .profile .ctaIntroduce .cross::before {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 30px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: #bebebe;
+}
+.rC .profileArea .profile:hover .ctaIntroduce .cross::before {
+  background: #9a7f62;
+}
+.rC .profileArea .profile .ctaIntroduce .name::before {
+  content: "";
+  display: block;
+  width: 77px;
+  height: 1px;
+  background: #c7c7c7;
+  position: absolute;
+  left: 0;
+  top: 100%;
+}
+
+/* 05romgangCenter 재산제세센터 */
+.rPC .cont2 h2 p {
+  color: #666666 !important;
+  font-size: 17px !important;
+}
+.rPC .cont3 h2 {
+  font-size: 30px !important;
+  font-weight: 500;
+}
+.rPC .cont3 h2 p {
+  margin-top: 30px;
+  font-size: 24px !important;
+  font-weight: 400 !important;
+}
+.rPC .cont4 h2 {
+  font-size: 30px !important;
+  font-weight: 500;
+}
+.rPC .teamIntro {
+  margin-top: 100px;
+}
+.rPC .teamIntro li:nth-child(3) img:nth-child(2) {
+  display: none;
+}
+
+/* 06romgangCenter 세무조사대응센터 */
+.rTC .cont3 h2 {
+  font-size: 30px !important;
+  font-weight: 500;
+}
+.rTC .cont3 h2 p {
+  margin-top: 30px;
+  font-size: 24px !important;
+  font-weight: 400 !important;
+}
+.rTC .cont4 {
+  margin-bottom: 40px;
+}
+.rTC .cont4 h2 {
+  font-size: 30px !important;
+  font-weight: 500;
+}
+.rTC .cont4 h2 p.small {
+  text-align: center;
+}
+.rTC .cont4 p.small {
+  margin: 10px 20px 0;
+}
+.rTC .cont5 {
+  padding: 25px 35px;
+  border: 1px solid #ececec;
+}
+.rTC .cont5 h4 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: left;
+}
+.rTC .cont5 .textArea {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.rTC .cont5 .textArea ul:nth-child(1) {
+  margin-right: 20px;
+}
+.rTC .cont5 .textArea ul:nth-child(2) {
+  margin-right: 140px;
+}
+
+/* 07romgangCenter 조세불복센터 */
+.rAC .cont1 h2 p {
+  font-size: 16px !important;
+  color: #747474 !important;
+}
+.rAC .cont1 > p {
+  word-break: keep-all;
+}
+.rAC .cont2 .tableStyle {
+  flex-direction: column;
+}
+.rAC .cont2 .tableStyle .item .body {
+  border-left: 0;
+}
+.rAC .cont2 .tableStyle .item .body img:nth-child(2) {
+  display: none;
+}
+
+.cont3 .body {
+  flex-direction: column !important;
+  padding: 0;
+}
+.cont3 .body .tbody {
+  display: flex;
+  padding: 0;
+  border-bottom: 1px solid #e9e9e9;
+}
+.cont3 .body .tbody > div {
+  padding: 20px 10px;
+}
+.cont3 .body .tbody .th {
+  flex: 1;
+  font-size: 18px;
+  text-align: center;
+  background-color: #f8f8f8;
+  border-right: 1px solid #e9e9e9;
+}
+.cont3 .body .tbody .td {
+  flex: 3;
+  font-size: 17px;
+}
+
+@media screen and (max-width: 767px) {
+  .rIC .tableStyle .item {
+    flex: 1;
+    width: auto;
+  }
+  .rIC .tableStyle1 .item {
+    flex-direction: column;
+  }
+  .rIC .tableStyle1 .item .head {
+    width: auto;
+  }
+  .rIC .tableStyle1 .item .body {
+    width: auto;
+    border-left: 0;
+  }
+  .rIC .tableStyle2 li {
+    position: relative;
+    flex-direction: column;
+  }
+  .rIC .tableStyle2 li .head {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .rIC .tableStyle2 li .head::before {
+    display: none;
+  }
+  .rIC .tableStyle2 li .body {
+    width: 100%;
+    margin-left: 0;
+  }
+  .rIC .tableStyle2 li::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    height: 35px;
+    display: block;
+    width: 180px;
+    background: url(../images/icon/arrow-bt.png) no-repeat center;
+  }
+  .rIC .tableStyle2 li:last-child::before {
+    display: none;
+  }
+  .rIC .teamIntro li:nth-child(3) img:nth-child(1) {
+    display: none;
+  }
+  .rIC .teamIntro li:nth-child(3) img:nth-child(2) {
+    display: block;
+  }
+  .rPC .tableStyle1 .item {
+    flex-direction: column;
+  }
+  .rPC .tableStyle1 .item .head {
+    width: auto;
+  }
+  .rPC .tableStyle1 .item .body {
+    width: auto;
+    border-left: 0;
+  }
+  .rPC .teamIntro li:nth-child(3) img:nth-child(1) {
+    display: none;
+  }
+  .rPC .teamIntro li:nth-child(3) img:nth-child(2) {
+    display: block;
+  }
+  .rTC .tableStyle1 .item {
+    flex-direction: column;
+  }
+  .rTC .tableStyle1 .item .head {
+    width: auto;
+  }
+  .rTC .tableStyle1 .item .body {
+    width: auto;
+    border-left: 0;
+  }
+  .rTC .cont5 .textArea .bltList01 {
+    margin-right: 0 !important;
+  }
+  .rAC .cont2 .tableStyle1 .item {
+    flex-direction: column;
+  }
+  .rAC .cont2 .tableStyle1 .item .head {
+    width: auto;
+  }
+  .rAC .cont2 .tableStyle1 .item .body {
+    width: auto;
+    border-left: 0;
+  }
+  .rAC .cont2 .tableStyle1 .item .body img:nth-child(1) {
+    display: none;
+  }
+  .rAC .cont2 .tableStyle1 .item .body img:nth-child(2) {
+    display: block !important;
+  }
+  .rAC .cont3 .tableStyle1 .item .body {
+    padding: 0 !important;
+  }
+}
+[class^=icon_] {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #e5bcbc;
+  border-radius: 3px;
+}
+
+.icon_pen {
+  background: #fff url("../images/icon/pen.png") no-repeat center;
+}
+
+.icon_mouse {
+  background: #fff url("../images/icon/mouse.png") no-repeat center;
+}
+
+.icon_paper1 {
+  background: #fff url("../images/icon/paper1.png") no-repeat center;
+}
+
+.icon_paper2 {
+  background: #fff url("../images/icon/paper2.png") no-repeat center;
+}
+
+.icon_people {
+  background: #fff url("../images/icon/people1.png") no-repeat center;
+}
+
+.consultingLink2 {
+  display: block !important;
+}
+.consultingLink2 ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 210px;
+  margin-bottom: 15px;
+  flex-direction: column;
+  background: #000 url("../images/contents/cont_background1.png") no-repeat;
+  background-size: cover;
+}
+.consultingLink2 ul li {
+  margin: 0 20px 30px;
+  margin-bottom: 30px;
+}
+.consultingLink2 ul li p {
+  margin-top: 10px !important;
+  color: #fff !important;
+  font-size: 23px !important;
+  z-index: 1 !important;
+}
+.consultingLink2 ul .btn_red {
+  position: relative;
+  width: 185px;
+  height: 45px;
+  border-radius: 30px;
+  background: #fff;
+  z-index: 1;
+}
+.consultingLink2 ul .btn_red a {
+  position: absolute;
+  top: -5%;
+  display: block;
+  border-radius: 30px;
+  width: 100%;
+  line-height: 45px;
+  background: #d02220;
+  font-size: 19px;
+  font-weight: 700;
+  color: #fff;
+}
+.consultingLink2 ul .btn_red a:hover {
+  top: 0;
+  box-shadow: inset 1px 3px 3px #8f0f0d;
+}
+.consultingLink2 p.small {
+  color: #777 !important;
+  font-size: 15px !important;
+  text-align: left;
 }

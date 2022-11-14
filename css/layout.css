@@ -174,7 +174,7 @@
 }
 #contents .container {
   max-width: 1240px;
-  padding: 45px 120px 0;
+  padding-top: 45px;
   background: #fff;
   position: relative;
 }
@@ -190,30 +190,31 @@
   background-size: contain;
   z-index: -1;
 }
-#contents .container > p {
+#contents .container > .title {margin: 0 120px; border-bottom: 1px solid #e6e6e6;}
+#contents .container > .title > p {
   font-size: 16px;
   font-weight: 600;
   letter-spacing: 1px;
   color: #e42c2a;
 }
-#contents .container > h1 {
+#contents .container > .title > h1 {
   font-size: 40px;
   font-weight: 700;
   color: #373737;
 }
-#contents .container > ul {
+#contents .container > .title > ul {
   display: flex;
   justify-content: flex-end;
   margin-right: 22px;
   margin-bottom: 5px;
 }
-#contents .container > ul > li {
+#contents .container > .title > ul > li {
   position: relative;
   margin-left: 12px;
   font-size: 15px;
   font-weight: 300;
 }
-#contents .container > ul > li:first-child::after {
+#contents .container > .title > ul > li:first-child::after {
   content: "";
   display: block;
   position: absolute;
@@ -223,7 +224,7 @@
   left: -26px;
   background-image: url("../images/icon/home.png");
 }
-#contents .container > ul > li::before {
+#contents .container > .title > ul > li::before {
   content: "";
   display: block;
   position: absolute;
@@ -235,8 +236,8 @@
 }
 #contents .container .contBox {
   background: #fff;
-  border-top: 1px solid #e6e6e6;
   padding-top: 70px;
+  padding: 70px 120px 0;
 }
 #contents .container .contBox .cont {
   display: flex;
@@ -255,15 +256,17 @@
 }
 
 @media screen and (max-width: 1599px) {
-  #contents .container {width:calc(100% - 60px);padding: 45px 60px 45px 60px}
+  #contents .container {width:calc(100% - 60px); padding: 45px 60px 45px 60px;}
 }
 @media screen and (max-width: 1179px) {
   #contents {padding: 0 15px;}
   #contents .container {padding: 65px 0 0; width: 100%;}
   #contents .container::before {display: none;}
-  #contents .container > ul {display: none;}
+  #contents .container > .title > ul {display: none;}
   #contents .container .contBox .cont {margin: 0 0 65px 0;}
 }
 @media screen and (max-width: 767px) {
   #contents {padding-top: 0;}
+  .pc {display: none;}
+  .mobile {display: block;}
 }
