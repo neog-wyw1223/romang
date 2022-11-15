@@ -1,6 +1,15 @@
 /* pc, mobile */
 .mobile {display: none;}
 
+@media screen and (max-width: 767px) {
+  #contents {padding-top: 0;}
+  .pc {display: none;}
+  .mobile {display: block !important;}
+}
+/* map */
+.mapWrap {padding: 0 15px;}
+#map {width: 100%; height: 400px; margin-bottom: 50px;}
+
 /* dot */
 .dot p::before {
   content: "";
@@ -11,6 +20,14 @@
   top: 10px;
   left: -10px;
   background-image: url("../images/blt/blt01.png");
+}
+/* 2022-11-11 로망제세 bltList04 추가 */
+.bltList04 > li, .blt04 {
+  background: url("../images/blt/blt04.png") no-repeat 2px 14px;
+  padding: 5px 0 0px 13px;
+}
+[class^="bltList"] li + li {
+  margin-top: 7px;
 }
 /* tab */
 .tab1 {
@@ -39,6 +56,35 @@
   line-height: 52px;
   font-weight: 400;
 }
+.tab2Wrap {justify-content: center;}
+.tab2Wrap .tab2 {
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.tab2Wrap .tab2 li {
+  flex-basis: 33.33%;
+  padding: 7.5px;
+  border-radius: 30px 0 30px 30px;
+}
+.tab2Wrap .tab2 li.on a,
+.tab2Wrap .tab2 li:hover a {
+  background: #e42c2a;
+  color: #fff;
+}
+.tab2Wrap .tab2 li a {
+  display: block;
+  margin: 0 auto !important;
+  color: #696969;
+  border: 1px solid #e42c2a;
+  border-radius: inherit;
+  background: #fff;
+  height: 52px;
+  font-size: 18px;
+  line-height: 52px;
+  font-weight: 400;
+}
 @media screen and (max-width: 1179px) {
   .tab1 {
     flex-wrap: wrap;
@@ -61,6 +107,12 @@
   }
   .tab1 li a {
     font-size: 16px;
+  }
+  .tab2Wrap .tab2 {
+    width: 100%;
+  }
+  .tab2Wrap .tab2 li {
+    flex-basis: 50%;
   }
 }
 /* tableStyle */
@@ -142,7 +194,7 @@
   width: 100%;
 }
 .profileWrap .profile {
-  height: 590px;
+  min-height: 590px;
   position: relative;
   flex: 1;
   background: #fafafa;
@@ -174,14 +226,12 @@
   overflow: hidden;
 }
 .profileWrap .profile .ctaImg::before {
-  position: absolute;
   content: "";
   display: block;
   width: 100%;
   height: 100%;
-  bottom: 0;
   background-size: contain;
-  background-position-x: center;
+  background-position: bottom;
   background-repeat: no-repeat;
 }
 .profileWrap .profile .ctaImg1::before {
@@ -192,6 +242,7 @@
 }
 .profileWrap .profile .ctaIntroduce {
   height: 40%;
+  white-space: nowrap;
   text-align: left;
   padding: 40px;
   border: 1px solid #ececec;
@@ -250,12 +301,25 @@
   left: 0;
   top: 100%;
 } 
+@media screen and (max-width: 908px) {
+  .profileWrap {flex-direction: column;}
+  .profileWrap .profile:nth-child(1) {
+    margin-right: 0;
+  }
+  .profileWrap .profile:nth-child(2) {
+    margin-left: 0;
+  }
+  
+  .profileWrap .profile {min-height: unset;}
+  .profileWrap .profile .ctaImg {height: 300px;}
+  .profileWrap .profile .ctaIntroduce {height: unset; white-space: unset;}
+}
 /* consultingLink */
 .consultingLink {
+  display: flex;
   position: relative;
   justify-content: center;
   align-items: center;
-  width: 100%;
   height: 210px;
   flex-direction: column;
   background: #000;
@@ -310,17 +374,20 @@
 }
 @media screen and (max-width: 767px) {
   .consultingLink {
-    height: 327px;
+    height: 360px;
   }
   .consultingLink li {
     margin: 0 45px 30px;
   }
   .consultingLink li p:nth-child(2) {
-    margin-top: 30px;
+    margin-top: 25px;
   }
   .consultingLink::before {
     background-position: center;
   }
+}
+@media screen and (max-width: 399px) {
+  .consultingLink {height: 390px;}
 }
 
 /* tblType01 */
@@ -371,7 +438,7 @@
   padding: 0 0 0 10px;
   margin-bottom: 12px;
   font-size: 15px;
-  text-align-last: left;
+  text-align: left;
 }
 /* tblType02 */
 .tblType02 {

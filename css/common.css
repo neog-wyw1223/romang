@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 /* 글꼴설정 */
-@import url('font.css');
+@import url('./font.css');
 
 body {
 	overflow: hidden;
