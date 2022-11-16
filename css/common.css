@@ -43,6 +43,7 @@ img {max-width: 100%;}
 
 a {text-decoration: none;}
 a:hover {text-decoration: none;}
+.clear:after, ul:after, ol:after, dl:after, .afl:after	{content:""; display:block; clear:both;}
 .phide, .pblock2, .mblock, .tblock {display:none !important}
 
 @media screen and (max-width:1399px) {
@@ -61,6 +62,14 @@ a:hover {text-decoration: none;}
 	.mhide {display:none !important}
 }
 
+/* css :align */
+.al	{text-align:left !important}
+.ac	{text-align:center !important}
+.ar	{text-align:right !important}
+.aAl td {text-align:left !important}
+.vt, .avt *	{vertical-align:top !important}
+.vm, .avm *	{vertical-align:middle !important}
+.vb, .avb *	{vertical-align:bottom !important}
 
 input[type='text'] + input[type='checkbox'] + label, 
 input[type='password'] + input[type='checkbox'] + label, 
