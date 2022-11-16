@@ -1169,7 +1169,6 @@
   margin-bottom: 100px;
 }
 .consulting .cont {
-  width: 100%;
   min-height: 250px;
   text-align: left;
   background-image: url(../images/contents/consulting_img5.png);
@@ -1191,7 +1190,7 @@
   display: block;
   width: 90px;
   height: 90px;
-  background: url(../images/contents/cont_bg.png) no-repeat;
+  background: url("../images/contents/cont_bg.png") no-repeat;
 }
 .consulting .cont .mobTxt {
   display: none;
@@ -1325,7 +1324,7 @@
   box-shadow: inset 1px 3px 3px #8f0f0d;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1179px) {
   .rIC .tableStyle .item {
     flex: 1;
     width: auto;
@@ -1446,6 +1445,10 @@
   }
   .consulting .cont .mobTxt {
     display: block;
+  }
+  .consulting .tblType02,
+  .consulting .chk {
+    margin: 0 15px;
   }
 }
 @media screen and (max-width: 500px) {
