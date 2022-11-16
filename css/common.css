@@ -262,6 +262,7 @@ input::placeholder {color: #999; opacity: 1;}			/* 파이어폭스 51+, 크롬 5
 .mb120 {margin-bottom: 120px !important;}
 .mb150 {margin-bottom: 150px !important;}
 
+.p00 {padding: 0 !important;}
 /* padding-top */
 .pt15 {padding-top: 15px !important;}
 .pt50 {padding-top: 50px !important;}

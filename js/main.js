@@ -13,26 +13,11 @@ $(function () {
 	});
 	// main parallax scrolling
 	$('#fullPage').fullpage({
+		licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
 		normalScrollElements: '#footer',
 		responsiveWidth: 1400,
 		responsiveHeight: 740,
 		navigation: false,
-		showActiveTooltip: false,
-		onLeave:function(origin, destination, direction){
-			if(origin['index'] == 0) {
-				//$('body').removeClass('fp-viewing0fin');
-				//$('#topPopup').addClass('deactive');
-			}
-			if(destination['index'] == 0) {
-				//$mainPopup.slick('refresh');
-			}
-		},
-		afterLoad: function(origin, destination, direction){
-			if(destination['index'] == 0) {
-				//$('body').addClass('fp-viewing0fin');
-				//$('#topPopup').removeClass('deactive');
-				//$mainPopup.slick('refresh');
-			}
-		},
+		showActiveTooltip: false
 	});
 });

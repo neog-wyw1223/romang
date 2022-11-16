@@ -5,191 +5,235 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Roman Tax</title>
-	<link rel="stylesheet" href="../css/style.css">
-	<script defer src="../js/headerEvent.js"></script>
+	<script src="../lib/jquery-1.11.0.min.js"></script>
+
+	<!-- common -->
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<script src="../js/common.js"></script>
 </head>
+
 <body>
-  <div class="mobileBg"></div>
-  <div id="headerM">
-    <button><img src="../images/icon/bar1.png" alt="menu"></button>
-    <h1><a href="#none"><img src="../images/main/logo.png" alt="logo"></a></h1>
-  </div>
-  <div id="wrap">
-    <div id="header">
-      <button><img src="../images/icon/bar2.png" alt="menu"></button>
-      <h1><a href="#none"></a></h1>
-      <ul>
-        <li class="on">
-          <a href="#none">로망 소개</a>
-          <ul>
-            <li><a href="./01romangIntroduce_01.html">회사소개</a></li>
-            <li><a href="./01romangIntroduce_02.html">세무사 소개</a></li>
-            <li class="on"><a href="./01romangIntroduce_03.html">협력사 소개</a></li>
-            <li><a href="./01romangIntroduce_04.html">오시는길</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#none">로망 서비스</a>
-          <ul>
-            <li><a href="./02romgangService_01.html">맞춤형기장서비스</a></li>
-            <li><a href="./02romgangService_02.html">기업생애주기별 서비스</a></li>
-            <li><a href="./02romgangService_03.html">차별화된 용역 서비스</a></li>
-            <li><a href="./02romgangService_04.html">IT기술융합서비스</a></li>
-          </ul>
-        </li>
-        <li><a href="#none">블로그</a></li>
-        <li><a href="./04romgangCenter.html">법인설립센터</a></li>
-        <li><a href="./05romgangCenter.html">재산제세센터</a></li>
-        <li><a href="./06romgangCenter.html">세무조사대응센터</a></li>
-        <li><a href="./07romgangCenter.html">조세불복센터</a></li>
-        <li><a href="./08consulting.html">상담신청</a></li>
-      </ul>
-    </div>
-    <div id="contents">
-      <div class="container">
-        <div class="title">
-          <p>COOPERATIVE COMPANY</p>
-          <h1>협력사 소개</h1>
-          <ul>
-            <li>로망소개</li>
-            <li>협력사 소개</li>
-          </ul>
-        </div>
-        <div class="contBox rI03">
-          <div class="cont cont1">
-            <div class="left">
-              <h2>로망은 각 분야에 세무 법률 전문<br/> 집단 네트워크를 보유하고 있습니다.</h2>
-              <p>복잡다단한 환경 속에서 경영자, 자산가분들은<br/>경영·경제활동을 하며 세무, 법률 등 수많은<br/>전문자격서비스업의 필요성에 직면하십니다.</p>
-              <p>하지만 필요할 때마다 찾아봐야하는 어려움과<br/>찾은 전문가를 신뢰하기까지 고객분들의 소중한 시간이<br/>많이 소요됩니다.</p>
-            </div>
-            <div class="right">
-              <img class="pc" src="../images/contents/cont_img1.png" alt="로망은 각 분야에 세무 법률 전문 집단 네트워크를 보유하고 있습니다.">
-              <img class="mobile" src="../images/contents/cont_img1_M.png" alt="로망은 각 분야에 세무 법률 전문 집단 네트워크를 보유하고 있습니다.">
-            </div>
-          </div>
-          <div class="cont cont2">
-            <figure>
-              <img class="pc" src="../images/contents/cont_img2.png" alt="법률, 법무, 감정평가, 행정, 중개 등 우수한 전문가들과 협력관계를 맺고 있습니다.">
-              <img class="mobile" src="../images/contents/cont_img2_M.png" alt="법률, 법무, 감정평가, 행정, 중개 등 우수한 전문가들과 협력관계를 맺고 있습니다.">
-            </figure>
-            <p>고객 니즈를 해결하기 위해 Roman Tax는 IT 기술은 물론<br/>법률, 법무, 감정평가, 행정, 중개 등 우수한 전문가들과 협력관계를 맺고 있습니다.</p>
-          </div>
-          <div class="cont cont3">
-            <figure>
-              <img class="pc" src="../images/contents/cont_img3.png" alt="Roman Tax를 통해 One Point로 간편하게 해결">
-              <img class="mobile" src="../images/contents/cont_img3_M.png" alt="Roman Tax를 통해 One Point로 간편하게 해결">
-            </figure>
-            <p>고객분들의 어려움은 Roman Tax를 통해 One Point로 간편하게 해결하시길 바랍니다.</p>
-          </div>
-          <div class="cont cont4">
-            <div class="tableStyle tableStyle1">
-              <div class="item">
-                <div class="head">
-                  <h3>연구개발</h3>
-                </div>
-                <div class="body img img1"></div>
-                <div class="body text">
-                  <ul class="bltList01 al">
-                    <li>로망택스 전속 ICT업무 파트너</li>
-                    <li>세무사 사무실 전용 ERP 프로그램 개발/지원</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="item">
-                <div class="head">
-                  <h3>별률&법무</h3>
-                </div>
-                <div class="body img img2"></div>
-                <div class="body text">
-                  <ul class="bltList01 al">
-                    <li>로망택스 제휴 법률·법무 업무 파트너</li>
-                    <li>로망택스 조세불복 업무 파트너</li>
-                    <li>민사/행정소송 등 법률 업무 서비스 전문</li>
-                    <li>상업등기/부동산등기 등 법무 업무 서비스 전문</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="item">
-                <div class="head">
-                  <h3>노무</h3>
-                </div>
-                <div class="body img img3"></div>
-                <div class="body text">
-                  <ul class="bltList01 al">
-                    <li>로망택스 제휴 노무 업무 파트너</li>
-                    <li>로망택스&노무법인 바우 사대보험 업무 연동 서비스 파트너</li>
-                    <li>노무 법률 자문 서비스 전문</li>
-                    <li>급여 아웃소싱 전문</li>
-                    <li>노무 관련 지원금 컨설팅 전문</li>
-                    <li>노동 사건 대리 전문</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <p>Roman Tax는 고객분들의 니즈에 맞춰 다양한 분야의 전문가들과 함께 할 수 있도록 노력하겠습니다.</p>
-          </div>
-        </div>
-      </div>
-      <div id="footer">
-        <div class="container">
-          <div class="fcont fcont1">
-            <h1><img src="../images/main/logo_footer.png" alt="세무회계 로망"></h1>
-            <ul>
-              <li class="on"><a href="#none">찾아오시는 길</a></li>
-              <li><a href="#none">이용안내</a></li>
-              <li><a href="#none">개인정보 취급방침</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="container">
-          <div class="fcont fcont2">
-            <div class="textWrap">
-              <ul>
-                <li>
-                  <ul>
-                    <li>세무법인 로망</li>
-                    <li>대표세무사 : 양진규</li>
-                  </ul>
-                </li>
-                <li>사업자 등록번호: 419-08-02076</li>
-              </ul>
-              <ul>
-                <li>(05836) 서울시 송파구 법원로11길 7 1026호 <br class="mobile"/>(문정동, 현대지식산업센터 &nbsp;&nbsp;C동)</li>
-                <li>romantax@roman-tax.kr</li>
-              </ul>
-              <ul>
-                <li>TEL : 02-6925-4350</li>
-                <li>FAX : 0503-8379-2185</li>
-              </ul>
-            </div>
-            <div class="linkWrap">
-              <ul>
-                <li>
-                  <a href="#none"></a>
-                  <img src="../images/icon/footer1.png">
-                  <p>상담신청</p>
-                </li>
-                <li>
-                  <a href="#none"></a>
-                  <img src="../images/icon/footer2.png">
-                  <p>카카오톡</p>
-                </li>
-                <li>
-                  <a href="#none"></a>
-                  <img src="../images/icon/footer3.png">
-                  <p>네이버</p>
-                </li>
-                <li>
-                  <a href="#none"></a>
-                  <img src="../images/icon/footer4.png">
-                  <p>전화상담</p>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+	<div class="mobileBg"></div>
+	<div id="headerM">
+		<button><img src="../images/icon/bar1.png" alt="menu"></button>
+		<h1><a href="../main/main.html"><img src="../images/main/logo.png" alt="Roman Tax"></a></h1>
+	</div>
+	<div id="wrap">
+		<div id="header">
+			<button><img src="../images/icon/bar2.png" alt="menu"></button>
+			<h1><a href="../main/main.html"></a></h1>
+			<ul>
+				<li class="on">
+					<a href="#none">로망 소개</a>
+					<ul>
+						<li><a href="../sub/01romangIntroduce_01.html">회사소개</a></li>
+						<li><a href="../sub/01romangIntroduce_02.html">세무사 소개</a></li>
+						<li class="on"><a href="../sub/01romangIntroduce_03.html">협력사 소개</a></li>
+						<li><a href="../sub/01romangIntroduce_04.html">오시는길</a></li>
+					</ul>
+				</li>
+				<li><a href="../sub/02romgangService_01.html">로망 서비스</a></li>
+				<li><a href="#none">블로그</a></li>
+				<li><a href="../sub/04romgangCenter.html">법인설립센터</a></li>
+				<li><a href="../sub/05romgangCenter.html">재산제세센터</a></li>
+				<li><a href="../sub/06romgangCenter.html">세무조사대응센터</a></li>
+				<li><a href="../sub/07romgangCenter.html">조세불복센터</a></li>
+				<li><a href="../sub/08consulting.html">상담신청</a></li>
+			</ul>
+		</div>
+		<div id="contents">
+			<div class="container">
+				<div class="title">
+					<p>COOPERATIVE COMPANY</p>
+					<h1>협력사 소개</h1>
+					<ul>
+						<li>로망소개</li>
+						<li>협력사 소개</li>
+					</ul>
+				</div>
+				<div class="contBox rI03">
+					<div class="cont cont1">
+						<div class="left">
+							<h2>로망은 각 분야에 세무 법률 전문<br/> 집단 네트워크를 보유하고 있습니다.</h2>
+							<p>복잡다단한 환경 속에서 경영자, 자산가분들은<br/>경영·경제활동을 하며 세무, 법률 등 수많은<br/>전문자격서비스업의 필요성에 직면하십니다.</p>
+							<p>하지만 필요할 때마다 찾아봐야하는 어려움과<br/>찾은 전문가를 신뢰하기까지 고객분들의 소중한 시간이<br/>많이 소요됩니다.</p>
+						</div>
+						<div class="right">
+							<img class="pc" src="../images/contents/cont_img1.png" alt="로망은 각 분야에 세무 법률 전문 집단 네트워크를 보유하고 있습니다.">
+							<img class="mobile" src="../images/contents/cont_img1_M.png" alt="로망은 각 분야에 세무 법률 전문 집단 네트워크를 보유하고 있습니다.">
+						</div>
+					</div>
+					<div class="cont cont2">
+						<figure>
+						<img class="pc" src="../images/contents/cont_img2.png" alt="법률, 법무, 감정평가, 행정, 중개 등 우수한 전문가들과 협력관계를 맺고 있습니다.">
+						<img class="mobile" src="../images/contents/cont_img2_M.png" alt="법률, 법무, 감정평가, 행정, 중개 등 우수한 전문가들과 협력관계를 맺고 있습니다.">
+						</figure>
+						<p>고객 니즈를 해결하기 위해 Roman Tax는 IT 기술은 물론<br/>법률, 법무, 감정평가, 행정, 중개 등 우수한 전문가들과 협력관계를 맺고 있습니다.</p>
+					</div>
+					<div class="cont cont3">
+						<figure>
+						<img class="pc" src="../images/contents/cont_img3.png" alt="Roman Tax를 통해 One Point로 간편하게 해결">
+						<img class="mobile" src="../images/contents/cont_img3_M.png" alt="Roman Tax를 통해 One Point로 간편하게 해결">
+						</figure>
+						<p>고객분들의 어려움은 Roman Tax를 통해 One Point로 간편하게 해결하시길 바랍니다.</p>
+					</div>
+					<div class="cont cont4">
+						<div class="tableStyle tableStyle1 cnt6">
+							<div class="item">
+								<div class="head">
+									<h3>연구개발</h3>
+								</div>
+								<div class="body img img1"></div>
+								<div class="body text">
+									<ul class="bltList01 al">
+										<li>로망택스 전속 ICT업무 파트너</li>
+										<li>세무사 사무실 전용 ERP 프로그램 개발/지원</li>
+									</ul>
+								</div>
+							</div>
+							<div class="item">
+								<div class="head">
+									<h3>별률&법무</h3>
+								</div>
+								<div class="body img img2"></div>
+								<div class="body text">
+									<ul class="bltList01 al">
+										<li>로망택스 제휴 법률·법무 업무 파트너</li>
+										<li>로망택스 조세불복 업무 파트너</li>
+										<li>민사/행정소송 등 법률 업무 서비스 전문</li>
+										<li>상업등기/부동산등기 등 법무 업무 서비스 전문</li>
+									</ul>
+								</div>
+							</div>
+							<div class="item">
+								<div class="head">
+									<h3>노무</h3>
+								</div>
+								<div class="body img img3"></div>
+								<div class="body text">
+									<ul class="bltList01 al">
+										<li>로망택스 제휴 노무 업무 파트너</li>
+										<li>로망택스&노무법인 바우 사대보험 업무 연동 서비스 파트너</li>
+										<li>노무 법률 자문 서비스 전문</li>
+										<li>급여 아웃소싱 전문</li>
+										<li>노무 관련 지원금 컨설팅 전문</li>
+										<li>노동 사건 대리 전문</li>
+									</ul>
+								</div>
+							</div>
+							<div class="item">
+								<div class="head">
+									<h3>감정평가</h3>
+								</div>
+								<div class="body img img4"></div>
+								<div class="body text">
+									<ul class="bltList01 al">
+										<li>로망택스 제휴 감정평가 업무 파트너</li>
+										<li>세무업 전문 감정평가법인</li>
+										<li>상속세/증여세 평가, 현물출자 평가, 자산재평가, 특수관계자 평가, 무형자산 평가 전문</li>
+									</ul>
+								</div>
+							</div>
+							<div class="item">
+								<div class="head">
+									<h3>공인중개</h3>
+								</div>
+								<div class="body img img5"></div>
+								<div class="body text">
+									<ul class="bltList01 al">
+										<li>로망택스 제휴 공인중개 업무 파트너</li>
+										<li>특수관계인 부동산 이동 중개-세무 원스톱 서비스 제공</li>
+									</ul>
+								</div>
+							</div>
+							<div class="item">
+								<div class="head">
+									<h3>행정</h3>
+								</div>
+								<div class="body img img6"></div>
+								<div class="body text">
+									<ul class="bltList01 al">
+										<li>로망택스 제휴 행정·가맹거래사 업무 파트너</li>
+										<li>공장등록/직접생산 행정업무 대리 전문</li>
+										<li>조달청/식약청 행정업무 대리 전문</li>
+										<li>사/재단법인 행정업무 대리 전문</li>
+										<li>행정심판 업무 대리 전문</li>
+										<li>인·허가 비자대행 전문</li>
+										<li>가맹사업 자문/가맹컨설팅 업무 전문</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<p>Roman Tax는 고객분들의 니즈에 맞춰 다양한 분야의 전문가들과 함께 할 수 있도록 노력하겠습니다.</p>
+					</div>
+				</div>
+			</div>
+			<div id="footer">
+				<div class="container">
+					<div class="fcont fcont1">
+						<h1><img src="../images/main/logo_footer.png" alt="세무회계 로망"></h1>
+						<ul>
+							<li class="on"><a href="#none">찾아오시는 길</a></li>
+							<li><a href="#none">이용안내</a></li>
+							<li><a href="#none">개인정보 취급방침</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="container">
+					<div class="fcont fcont2">
+						<div class="textWrap">
+							<ul>
+								<li>
+									<ul>
+										<li>세무법인 로망</li>
+										<li>대표세무사 : 양진규</li>
+									</ul>
+								</li>
+								<li>사업자 등록번호: 419-08-02076</li>
+							</ul>
+							<ul>
+								<li>(05836) 서울시 송파구 법원로11길 7 1026호 <br class="mobile"/>(문정동, 현대지식산업센터 &nbsp;&nbsp;C동)</li>
+								<li>romantax@roman-tax.kr</li>
+							</ul>
+							<ul>
+								<li>TEL : 02-6925-4350</li>
+								<li>FAX : 0503-8379-2185</li>
+							</ul>
+						</div>
+						<div class="linkWrap">
+							<ul>
+								<li>
+									<a href="#none"></a>
+									<img src="../images/icon/footer1.png">
+									<p>상담신청</p>
+								</li>
+								<li>
+									<a href="#none"></a>
+									<img src="../images/icon/footer2.png">
+									<p>카카오톡</p>
+								</li>
+								<li>
+									<a href="#none"></a>
+									<img src="../images/icon/footer3.png">
+									<p>네이버</p>
+								</li>
+								<li>
+									<a href="#none"></a>
+									<img src="../images/icon/footer4.png">
+									<p>전화상담</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<ul id="quick">
+			<li><a href="../sub/08.consulting.html">상담신청</a></li>
+			<li><a href="#none">카카오톡</a></li>
+			<li><a href="#none">블로그</a></li>
+			<li><a href="tel:02-6925-4350">유선전화</a></li>
+		</ul>
+	</div>
 </body>
 </html>

@@ -5,149 +5,158 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Roman Tax</title>
-	<link rel="stylesheet" href="../css/style.css">
-  <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=gcnubcvzwd"></script>
-	<script defer src="../js/headerEvent.js"></script>
-  <script defer src="../js/naverMap.js"></script>
+	<script src="../lib/jquery-1.11.0.min.js"></script>
+
+	<!-- common -->
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=gcnubcvzwd"></script>
+	<script src="../js/common.js"></script>
+	<script defer src="../js/naverMap.js"></script>
 </head>
 <body>
-  <div class="mobileBg"></div>
-  <div id="headerM">
-    <button><img src="../images/icon/bar1.png" alt="menu"></button>
-    <h1><a href="#none"><img src="../images/main/logo.png" alt="logo"></a></h1>
-  </div>
-  <div id="wrap">
-    <div id="header">
-      <button><img src="../images/icon/bar2.png" alt="menu"></button>
-      <h1><a href="#none"></a></h1>
-      <ul>
-        <li class="on">
-          <a href="#none">로망 소개</a>
-          <ul>
-            <li><a href="./01romangIntroduce_01.html">회사소개</a></li>
-            <li><a href="./01romangIntroduce_02.html">세무사 소개</a></li>
-            <li><a href="./01romangIntroduce_03.html">협력사 소개</a></li>
-            <li class="on"><a href="./01romangIntroduce_04.html">오시는길</a></li>
-          </ul>
-        </li>
-        <li><a href="./02romgangService_01.html">로망 서비스</a></li>
-        <li><a href="#none">블로그</a></li>
-        <li><a href="./04romgangCenter.html">법인설립센터</a></li>
-        <li><a href="./05romgangCenter.html">재산제세센터</a></li>
-        <li><a href="./06romgangCenter.html">세무조사대응센터</a></li>
-        <li><a href="./07romgangCenter.html">조세불복센터</a></li>
-        <li><a href="./08consulting.html">상담신청</a></li>
-      </ul>
-    </div>
-    <div id="contents">
-      <div class="container">
-        <div class="title">
-          <p>DIRECTION</p>
-          <h1>오시는 길</h1>
-          <ul>
-            <li>로망소개</li>
-            <li>오시는길</li>
-          </ul>
-        </div>
-        <div class="contBox rI04">
-          <div class="mapWrap">
-            <div id="map"></div>
-          </div>
-          <div class="cont cont1">
-            <div class="left">
-              <div class="text text1">
-                <h3>주소</h3>
-                <p>(05836) 서울특별시 송파구 법원로 11길 7 1026호 (문정 현대지식산업센터 C동)</p>
-              </div>
-              <div class="text text2">
-                <h3>찾아오시는길</h3>
-                <div>
-                  <div class="subway">
-                    <img src="../images/icon/subway.png" alt="지하철">
-                    <ul>
-                      <li>지하철</li>
-                      <li>8호선 문정역 하차 컬쳐밸리 방면 도보 400m</li>
-                    </ul>
-                  </div>
-                  <div class="bus">
-                    <img src="../images/icon/bus.png" alt="버스">
-                    <ul>
-                      <li>버스</li>
-                      <li>문정로데오거리입구 정거장 하차 법조단지 방면 도보 600m</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="text text3">
-                <h3>주차안내</h3>
-                <p>문정현대지식산업센터 C동 주차장 이용 가능(무료)</p>
-                <p class="red">* 상담 후 돌아가실 때 주차여부를 알려주시기 바랍니다.</p>
-              </div>
-            </div>
-            <div class="right"><img src="../images/contents/cont_img5.png" alt="오시는길"></div>
-          </div>
-        </div>
-      </div>
-      <div id="footer">
-        <div class="container">
-          <div class="fcont fcont1">
-            <h1><img src="../images/main/logo_footer.png" alt="세무회계 로망"></h1>
-            <ul>
-              <li class="on"><a href="#none">찾아오시는 길</a></li>
-              <li><a href="#none">이용안내</a></li>
-              <li><a href="#none">개인정보 취급방침</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="container">
-          <div class="fcont fcont2">
-            <div class="textWrap">
-              <ul>
-                <li>
-                  <ul>
-                    <li>세무법인 로망</li>
-                    <li>대표세무사 : 양진규</li>
-                  </ul>
-                </li>
-                <li>사업자 등록번호: 419-08-02076</li>
-              </ul>
-              <ul>
-                <li>(05836) 서울시 송파구 법원로11길 7 1026호 <br class="mobile"/>(문정동, 현대지식산업센터 &nbsp;&nbsp;C동)</li>
-                <li>romantax@roman-tax.kr</li>
-              </ul>
-              <ul>
-                <li>TEL : 02-6925-4350</li>
-                <li>FAX : 0503-8379-2185</li>
-              </ul>
-            </div>
-            <div class="linkWrap">
-              <ul>
-                <li>
-                  <a href="#none"></a>
-                  <img src="../images/icon/footer1.png">
-                  <p>상담신청</p>
-                </li>
-                <li>
-                  <a href="#none"></a>
-                  <img src="../images/icon/footer2.png">
-                  <p>카카오톡</p>
-                </li>
-                <li>
-                  <a href="#none"></a>
-                  <img src="../images/icon/footer3.png">
-                  <p>네이버</p>
-                </li>
-                <li>
-                  <a href="#none"></a>
-                  <img src="../images/icon/footer4.png">
-                  <p>전화상담</p>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+	<div class="mobileBg"></div>
+	<div id="headerM">
+		<button><img src="../images/icon/bar1.png" alt="menu"></button>
+		<h1><a href="../main/main.html"><img src="../images/main/logo.png" alt="Roman Tax"></a></h1>
+	</div>
+	<div id="wrap">
+		<div id="header">
+			<button><img src="../images/icon/bar2.png" alt="menu"></button>
+			<h1><a href="../main/main.html"></a></h1>
+			<ul>
+				<li class="on">
+					<a href="#none">로망 소개</a>
+					<ul>
+						<li><a href="../sub/01romangIntroduce_01.html">회사소개</a></li>
+						<li><a href="../sub/01romangIntroduce_02.html">세무사 소개</a></li>
+						<li><a href="../sub/01romangIntroduce_03.html">협력사 소개</a></li>
+						<li class="on"><a href="../sub/01romangIntroduce_04.html">오시는길</a></li>
+					</ul>
+				</li>
+				<li><a href="../sub/02romgangService_01.html">로망 서비스</a></li>
+				<li><a href="#none">블로그</a></li>
+				<li><a href="../sub/04romgangCenter.html">법인설립센터</a></li>
+				<li><a href="../sub/05romgangCenter.html">재산제세센터</a></li>
+				<li><a href="../sub/06romgangCenter.html">세무조사대응센터</a></li>
+				<li><a href="../sub/07romgangCenter.html">조세불복센터</a></li>
+				<li><a href="../sub/08consulting.html">상담신청</a></li>
+			</ul>
+		</div>
+		<div id="contents">
+			<div class="container">
+				<div class="title">
+					<p>DIRECTION</p>
+					<h1>오시는 길</h1>
+					<ul>
+						<li>로망소개</li>
+						<li>오시는길</li>
+					</ul>
+				</div>
+				<div class="contBox rI04">
+					<div class="mapWrap">
+						<div id="map"></div>
+					</div>
+					<div class="cont cont1">
+						<div class="left">
+							<div class="text text1">
+								<h3>주소</h3>
+								<p>(05836) 서울특별시 송파구 법원로 11길 7 1026호 (문정 현대지식산업센터 C동)</p>
+							</div>
+							<div class="text text2">
+								<h3>찾아오시는길</h3>
+								<div>
+									<div class="subway">
+										<img src="../images/icon/subway.png" alt="지하철">
+										<ul>
+											<li>지하철</li>
+											<li>8호선 문정역 하차 컬쳐밸리 방면 도보 400m</li>
+										</ul>
+									</div>
+									<div class="bus">
+										<img src="../images/icon/bus.png" alt="버스">
+										<ul>
+											<li>버스</li>
+											<li>문정로데오거리입구 정거장 하차 법조단지 방면 도보 600m</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="text text3">
+								<h3>주차안내</h3>
+								<p>문정현대지식산업센터 C동 주차장 이용 가능(무료)</p>
+								<p class="red">* 상담 후 돌아가실 때 주차여부를 알려주시기 바랍니다.</p>
+							</div>
+						</div>
+						<div class="right"><img src="../images/contents/cont_img5.png" alt="오시는길"></div>
+					</div>
+				</div>
+			</div>
+			<div id="footer">
+				<div class="container">
+					<div class="fcont fcont1">
+						<h1><img src="../images/main/logo_footer.png" alt="세무회계 로망"></h1>
+						<ul>
+							<li class="on"><a href="#none">찾아오시는 길</a></li>
+							<li><a href="#none">이용안내</a></li>
+							<li><a href="#none">개인정보 취급방침</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="container">
+					<div class="fcont fcont2">
+						<div class="textWrap">
+							<ul>
+								<li>
+									<ul>
+										<li>세무법인 로망</li>
+										<li>대표세무사 : 양진규</li>
+									</ul>
+								</li>
+								<li>사업자 등록번호: 419-08-02076</li>
+							</ul>
+							<ul>
+								<li>(05836) 서울시 송파구 법원로11길 7 1026호 <br class="mobile"/>(문정동, 현대지식산업센터 &nbsp;&nbsp;C동)</li>
+								<li>romantax@roman-tax.kr</li>
+							</ul>
+							<ul>
+								<li>TEL : 02-6925-4350</li>
+								<li>FAX : 0503-8379-2185</li>
+							</ul>
+						</div>
+						<div class="linkWrap">
+							<ul>
+								<li>
+									<a href="#none"></a>
+									<img src="../images/icon/footer1.png">
+									<p>상담신청</p>
+								</li>
+								<li>
+									<a href="#none"></a>
+									<img src="../images/icon/footer2.png">
+									<p>카카오톡</p>
+								</li>
+								<li>
+									<a href="#none"></a>
+									<img src="../images/icon/footer3.png">
+									<p>네이버</p>
+								</li>
+								<li>
+									<a href="#none"></a>
+									<img src="../images/icon/footer4.png">
+									<p>전화상담</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<ul id="quick">
+			<li><a href="../sub/08.consulting.html">상담신청</a></li>
+			<li><a href="#none">카카오톡</a></li>
+			<li><a href="#none">블로그</a></li>
+			<li><a href="tel:02-6925-4350">유선전화</a></li>
+		</ul>
+	</div>
 </body>
 </html>
