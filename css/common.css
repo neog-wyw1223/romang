@@ -43,6 +43,24 @@ img {max-width: 100%;}
 
 a {text-decoration: none;}
 a:hover {text-decoration: none;}
+.phide, .pblock2, .mblock, .tblock {display:none !important}
+
+@media screen and (max-width:1399px) {
+	.pblock2 {display:block !important}
+	.phide2 {display:none !important}
+	span.pblock2 {display: inline-block !important;}
+}
+@media screen and (max-width:1350px) {
+	.phide3 {display:none !important}
+}
+@media screen and (max-width:1023px) {
+	.tblock {display:block !important}
+}
+@media screen and (max-width:799px) {
+	.mblock, .phide {display:block !important}
+	.mhide {display:none !important}
+}
+
 
 input[type='text'] + input[type='checkbox'] + label, 
 input[type='password'] + input[type='checkbox'] + label, 
