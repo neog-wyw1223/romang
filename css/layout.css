@@ -252,7 +252,7 @@
   font-weight: 300;
 }
 #contents .container .contBox .cont > div {
-  flex-grow: 1;
+  /* flex-grow: 1; */
 }
 
 @media screen and (max-width: 1616px) {
@@ -266,4 +266,75 @@
   #contents .container > .title {margin: 0 15px; border-bottom: unset;}
   #contents .container > .title > ul {display: none;}
   #contents .container .contBox .cont {margin: 0 15px 65px;}
+}
+
+/* footer */
+#footer .container {padding: 0; border-top: 1px solid #e1e1e1;}
+#footer .container::before {display: none;}
+#footer .fcont {display: flex; justify-content: space-between; align-items: center; margin-left: 20px;}
+#footer .fcont1 {padding: 25px 0;}
+#footer .fcont1 > ul {display: flex;}
+#footer .fcont1 > ul > li {position: relative; padding-left: 18px;}
+#footer .fcont1 > ul > li::before {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 1px;
+  height: 11px;
+  background: #777777;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+#footer .fcont1 > ul > li:first-child::before {display: none;}
+#footer .fcont1 > ul > li > a {font-size: 15px;}
+#footer .fcont1 > ul > li.on > a {color: #ed1c24;}
+#footer .fcont2 {padding: 50px 0;}
+#footer .fcont2 .textWrap ul {display: flex;}
+#footer .fcont2 .textWrap ul li {font-size: 16px; padding-right: 30px;}
+#footer .fcont2 .textWrap > ul > li {margin-bottom: 10px;}
+#footer .fcont2 .linkWrap ul {display: flex;}
+#footer .fcont2 .linkWrap > ul > li {margin-left: 9px; box-shadow: 0px 4px 3px rgb(41 43 45 / 13%);}
+#footer .fcont2 .linkWrap > ul > li {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80px; 
+  height: 80px; 
+  border-radius: 80px;
+  font-weight: 500;
+}
+#footer .fcont2 .linkWrap > ul > li > a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block; 
+  border-radius: inherit;
+  width: inherit;
+  height: inherit;
+}
+#footer .fcont2 .linkWrap > ul > li > p {margin-top: 3px;}
+#footer .fcont2 .linkWrap ul li:nth-child(1) {background: #3f3f3f;}
+#footer .fcont2 .linkWrap ul li:nth-child(1) p {color: #fff;}
+#footer .fcont2 .linkWrap ul li:nth-child(2) {background: #fee800;}
+#footer .fcont2 .linkWrap ul li:nth-child(3) {background: #00c73c;}
+#footer .fcont2 .linkWrap ul li:nth-child(3) p {color: #fff;}
+#footer .fcont2 .linkWrap ul li:nth-child(4) {background: #ffffff;}
+@media screen and (max-width: 1179px) {
+  #footer {padding: 0 15px;}
+  #footer .container {border-top: 1px solid #ececec;}
+  #footer .fcont {margin-left: 0 !important;}
+  #footer .fcont1 {justify-content: center; padding: 20px 0;}
+  #footer .fcont1 h1 {display: none;}
+  #footer .fcont1 > ul > li:first-child {padding-left: 0;}
+  #footer .fcont2 {flex-direction: column; padding: 35px 0;}
+  #footer .fcont2 .textWrap {margin-bottom: 50px;}
+  #footer .fcont2 .textWrap ul {flex-direction: column;}
+  #footer .fcont2 .textWrap ul li {padding-right: 0;}
+  #footer .fcont2 .linkWrap ul li:first-child {margin-left: 0;}
+  #footer .fcont2 .textWrap > ul > li > ul {flex-direction: row; justify-content: center;}
+  #footer .fcont2 .textWrap > ul > li > ul > li:first-child {margin-right: 10px;}
 }

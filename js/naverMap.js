@@ -9,7 +9,10 @@ var markerOptions = {
   position: position,
   map: map,
   icon: {
-    content: '<img src="http://localhost:1234/images/icon/maker.png" alt="" style="width:196px; height:107px">',
+    url: '../images/icon/maker.png',
+    size: new naver.maps.Size(196, 107),
+    origin: new naver.maps.Point(0, 0),
+    anchor: new naver.maps.Point(100, 100)
   }
 };
 

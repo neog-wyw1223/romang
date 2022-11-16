@@ -238,6 +238,7 @@
   .rI03 .cont4 > p {padding-top: 30px;}
 }
 /* 01romangIntroduce_04 */
+.rI04 .cont1  {justify-content: space-between;}
 .rI04 .cont1 .left .text {
   display: flex; 
   flex-direction: column; 
@@ -246,6 +247,11 @@
 }
 .rI04 .cont1 .left .text.text2 {display: flex; flex-direction: row;}
 .rI04 .cont1 .left .text.text2 > h3 {margin-right: 20px;}
+.rI04 .cont1 .left .text.text2 > div {text-align: left;}
+.rI04 .cont1 .left .text.text2 > div > div {display: flex; margin-bottom: 20px; align-items: center;}
+.rI04 .cont1 .left .text.text2 > div > div img {width: 47px; height: 47px;}
+.rI04 .cont1 .left .text.text2 > div > div > ul {margin-left: 10px;}
+.rI04 .cont1 .left .text.text2 > div > div > ul > li {font-size: 18px;}
 .rI04 .cont1 .left .text > h3,
 .rI04 .cont1 .left .text > p {font-size: 20px !important; font-weight: 400 !important; text-align: left;}
 .rI04 .cont1 .left .text > p.red {font-size: 17px !important; color: #d82421 !important;}
