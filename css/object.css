@@ -511,3 +511,100 @@
 @media screen and (max-width: 799px) {
   .imgBox img.phide{display: inline-block !important;}
 }
+
+/* 블로그 */
+.tabType02 {margin-bottom: 0 !important;}
+.tabType02 > li {
+  width: 20%;
+}
+.tabType02 > li > a{
+  width: 100%;
+}
+@media screen and (max-width: 1179px) {
+  .tabType02  {justify-content: flex-start;}
+  .tabType02 > li {flex-basis:auto;width: calc(50% - 6px);margin: 3px !important;}
+}
+.blogList {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-left: -25px;
+  justify-content: flex-start;
+}
+.blogList > li{
+	padding: 35px 0 0 25px;
+	width: calc(100% / 3);
+}
+.blogList > li > a{
+	display: block;
+}
+.blogList > li .imgBox {
+	margin-bottom: 15px;
+	
+}
+.blogList > li .imgBox img{
+  width: 100%;
+  border-radius: 15px;
+  height: 140px;
+}
+.blogList > li .gubun {
+	float: left;
+	color: #e42c2a;
+	font-size: 18px;
+}
+.blogList > li .date {
+	float: right;
+	color: #a2a2a2;
+	font-size: 17px;
+}
+.blogList > li .tit {
+	color: #111111 !important;
+	font-size: 17px !important;
+	font-weight: 500 !important;
+	text-align: left;
+	margin: 10px 0;
+	max-height: 48px;
+	line-height: 24px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+}
+.blogList > li .cont {
+	color: #777777 !important;
+	font-size: 16px !important;
+	text-align: left;
+	max-height: 46px;
+	line-height: 23px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+  margin-bottom: 0 !important;
+}
+.btn_more {
+	display: inline-block;
+	color: #000000;
+	background: url('../images/main/btn_more.png') right center no-repeat;
+	padding: 2px 30px 0 0;
+	font-size: 22px;
+	font-weight: 500;
+}
+#blogList .btn_more {
+	margin: 35px 0 0 0 ;
+}
+@media screen and (max-width: 1179px) {
+  .blogList > li .cont {margin: 0 !important;}
+}
+@media screen and (max-width: 767px) {
+  .blogList > li {width: calc(100% / 2);padding: 35px 0 0 20px;}
+  .blogList {margin-left: -20px;}
+}
+@media screen and (max-width: 424px) {
+  .blogList > li {width: 100%;padding: 35px 0 0 15px;}
+  .blogList {margin-left: -15px;}
+}
+/*-- 블로그 */

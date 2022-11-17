@@ -333,71 +333,24 @@
 	color: #e75250;
 	border-bottom: #e75250 solid 2px;
 }
-.blogList {
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: row;
-	justify-content: space-between;
-	margin-left: -25px;
-}
 .blogList > li{
 	padding: 35px 0 0 25px;
 	width: 25%;
 }
-.blogList > li > a{
-	display: block;
-}
-.blogList > li .imgBox {
-	margin-bottom: 15px;
-	
-}
-.blogList > li .imgBox img{width: 100%;}
 .blogList > li .gubun {
-	float: left;
-	color: #e42c2a;
 	font-size: 16px;
 }
 .blogList > li .date {
-	float: right;
-	color: #a2a2a2;
 	font-size: 15px;
 }
 .blogList > li .tit {
-	color: #111111;
-	font-size: 16px;
-	font-weight: 500;
-	text-align: left;
-	margin: 10px 0;
-	max-height: 48px;
-	line-height: 24px;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	display: -webkit-box;
-	-webkit-box-orient: vertical;
-	-webkit-line-clamp: 2;
+	color: #111111 !important;
+	font-size: 16px !important;
+	font-weight: 500 !important;
 }
 .blogList > li .cont {
-	color: #777777;
-	font-size: 15px;
-	text-align: left;
-	max-height: 46px;
-	line-height: 23px;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	display: -webkit-box;
-	-webkit-box-orient: vertical;
-	-webkit-line-clamp: 2;
-}
-.btn_more {
-	display: inline-block;
-	color: #000000;
-	background: url('../images/main/btn_more.png') right center no-repeat;
-	padding: 2px 30px 0 0;
-	font-size: 22px;
-	font-weight: 500;
-}
-#blogList .btn_more {
-	margin: 35px 0 0 0 ;
+	color: #777777 !important;
+	font-size: 15px !important;
 }
 /*-- 블로그 최신글 */
 /* 오시는 길 및 상담신청 */
