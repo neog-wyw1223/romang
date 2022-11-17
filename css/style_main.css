@@ -2,17 +2,12 @@
 @import url('./common.css');
 @import url('./layout.css');
 @import url('./object.css');
+
 #contents .container {
 	max-width: 1360px;
 }
 .main #contents{
 	padding-top: 0;
-}
-
-#footer,
-#footer.section.fp-section.fp-table.active.fp-completely, 
-#footer .fp-tableCell{
-	height: auto !important;
 }
 .section h3 {
 	color: #111111;
@@ -28,10 +23,25 @@
 	padding: 80px 80px;
 }
 .section .sectionCont::after {content: "";display: block;clear: both;}
-@media screen and (min-height:740px) {
+@media screen and (max-width:1739px) {
+	.section .sectionCont {width: 100%;padding: 0 40px !important;}
+}
+@media screen and (max-width:1399px){
+	.section .sectionCont {padding: 40px !important;}
+}
+@media screen and (max-width:1179px) {
+	.main #contents{margin-top: -70px;}
+	.section .sectionCont {padding-top: 70px !important;}
+}
+@media screen and (max-width:879px){
+	.main #contents,
+	.main #wrap{overflow-y: auto;}
+}
+@media screen and (min-height:850px){
 	.main #contents,
 	.main #wrap{overflow: hidden;}
 	.section .sectionCont {padding: 0 80px;}
+	.fp-responsive .section .sectionCont {padding: 80px;}
 }
 .btn_detail {
 	display: inline-block;
@@ -113,6 +123,11 @@
 	background-image: url('../images/main/btn_next.png');
 	left: 203px;
 }
+@media screen and (max-width: 1739px) {
+	#romanVisual .sectionCont {padding: 0 !important;}
+}
+@media screen and (max-width: 1399px) {
+}
 /*-- 메인 비주얼 */
 /* 소개글 및 서비스 소개 */
 #romanAbout div.sectionCont > p{
@@ -120,7 +135,7 @@
 	font-size: 17px;
 	line-height: 28px;
 	word-break: keep-all;
-	width: 900px;
+	max-width: 900px;
 	margin: 0 auto;
 }
 #romanAbout div.sectionCont > p + p{
@@ -213,6 +228,27 @@
 	right: 44px;
 	bottom: 24px;
 }
+@media screen and (max-width: 1564px) {
+	.serviceBox {padding-left: calc(50% + 80px);margin-left: -40px;}
+	.serviceBox .boxL {width: 50%;background-position: right 0 ;}
+	.serviceBox .boxR {margin-left: 0;}
+	.serviceBox .boxR p {padding-right: 20px;line-height: 28px;}
+	.serviceBox .boxL li:nth-child(1) {left: 204px}
+	.serviceBox .boxL li:nth-child(2) {left: 388px}
+	.serviceBox .boxL li:nth-child(3) {left: 20px}
+	.serviceBox .boxL li:nth-child(4) {left: 205px}
+	.serviceBox .boxR h4 {padding: 0 20px 15px 0;}
+	.serviceBox .boxR .btn_detail {bottom: 12px;}
+}
+@media screen and (max-width: 1399px) {
+	.serviceBox {padding-left: calc(50% + 60px);}
+	.serviceBox .boxL li a {width: 140px;height: 140px;padding-top: 80px;background-size: 53px auto;background-position: center 20px;font-size: 16px;}
+	.serviceBox .boxL li:nth-child(1) {left: 164px;top: 29px;}
+	.serviceBox .boxL li:nth-child(2) {left: 308px;top: 81px;}
+	.serviceBox .boxL li:nth-child(3) {left: 20px;top: 155px;}
+	.serviceBox .boxL li:nth-child(4) {left: 165px;top: 213px;}
+	.serviceBox .boxR p {}
+}
 /*-- 소개글 및 서비스 소개 */
 /* 협력사 및 센터안내 */
 #romanNetwork {
@@ -230,27 +266,28 @@
 }
 .centerList > li > a {
 	display: block;
+	height: 100%;
 }
 .centerList > li > a:hover > div::after{
 	content: "";
 	display: block;
 	border-radius: 15px;
-	height: 375px;
-	width: calc(100% - 6px);
+	height: calc(100% - 5px);
+	width: calc(100% - 5px);
 	position: absolute;
 	left: -1px;
-	top: 0;
+	top: 0px;
 	border: #e42c2a solid 4px;
 	box-shadow: rgba(41,43,45,0.3) 3px 3px 7px;
 }
 .centerList > li > a > div{
-	height: 381px;
+	height: 100%;
 	border-radius: 15px;
 	background-repeat: no-repeat;
 	background-position: calc(100% - 30px) calc(100% - 30px);
 	background-color: #fff;
 	border: #dbdbdb solid 1px;
-	padding: 40px 30px 0;
+	padding: 40px 20px 150px;
 	position: relative;
 }
 .centerList > li:nth-child(1) > a > div{background-image: url('../images/main/center_01.png');}
@@ -307,12 +344,28 @@
 	line-height: 41px;
 }
 .patnerBox > ul li .cont{
-	padding: 10px 0 0 0 ;
+	padding: 10px 5px;
 }
 .patnerBox > ul li .cont p{
-	padding: 5px 0 0 0 ;
+	padding: 5px 0px 0;
 	font-size: 15px;
 	color: #333333;
+}
+@media screen and (max-width:1659px) {
+	.patnerBox h4 {background-image: none;width: 120px;}
+}
+@media screen and (max-width:1499px) {
+	.patnerBox {margin-top: 90px;}
+	.patnerBox h4, .patnerBox > ul {float: none;}
+	.patnerBox h4 {width: 100%;text-align: center;margin: 0 0 25px;}
+	.patnerBox > ul {width: 100%;} 
+	.patnerBox > ul li:first-child{margin-left: 0;} 
+}
+@media screen and (max-width:1399px) {
+	.centerList > li + li{margin-left: 10px;}
+}
+@media screen and (max-width:1280px) {
+	.patnerBox > ul li .cont p{font-size: 14px;}
 }
 /*-- 협력사 및 센터안내 */
 
@@ -352,6 +405,10 @@
 	color: #777777 !important;
 	font-size: 15px !important;
 }
+@media screen and (max-width: 1179px) {
+	.blogList > li {padding: 25px 0 0 25px;}
+	#blogList .btn_more {margin-top: 20px;}
+}
 /*-- 블로그 최신글 */
 /* 오시는 길 및 상담신청 */
 #romanLocal {
@@ -359,6 +416,9 @@
 }
 .mapArea {
 	height: 505px;
+}
+.mapArea img{
+	height: 100%; /* To. 개발 : 나중에 API넣고 나면 통채로 지워 주세요. */
 }
 #romanLocal ul {
 	display: flex;
@@ -397,7 +457,16 @@
 	border-color: #d4d4d4;
 	color: #000000;
 }
+@media screen and (max-width:1399px) {
+	#romanLocal ul li a {background-position: calc(100% - 15px) center;padding-left: 15px;font-size: 18px;}
+}
 /*-- 오시는 길 및 상담신청 */
 @media screen and (max-width:1740px) {
 	#quick{display: none;}
+}
+#footer {margin-top: 0 !important;}
+#footer,
+#footer.section.fp-section.fp-table.active.fp-completely, 
+#footer .fp-tableCell{
+	height: auto !important;
 }

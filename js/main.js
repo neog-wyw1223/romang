@@ -15,8 +15,8 @@ $(function () {
 	$('#fullPage').fullpage({
 		licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
 		normalScrollElements: '#footer',
-		responsiveWidth: 1400,
-		responsiveHeight: 740,
+		responsiveWidth: 880,
+		responsiveHeight: 850,
 		navigation: false,
 		showActiveTooltip: false
 	});
