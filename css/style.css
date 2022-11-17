@@ -1338,7 +1338,7 @@
 }
 .consulting .btn_red a {
   position: absolute;
-  top: -5%;
+  top: -1px;
   display: block;
   border-radius: 5px;
   width: 100%;
@@ -1452,11 +1452,12 @@
     padding: 0 !important;
   }
   .consulting .cont {
-    min-height: 550px;
-    padding: 160px 20px 20px;
+    min-height: 650px;
+    padding: 120px 20px 20px;
     text-align: center;
     background-image: url("../images/contents/consulting_img5-1.png");
     background-position: center bottom;
+    display: block !important;
   }
   .consulting .cont h2 {
     font-size: 21px;

@@ -170,7 +170,17 @@ input::placeholder {color: #999; opacity: 1;}			/* 파이어폭스 51+, 크롬 5
 .w50 {width: 50%;}
 
 .w110px {width: 110px;}
-.w200px {width: 200px;}
+.w200px {width: 200px !important;}
+
+@media screen and (max-width:799px) {
+	.w200px {width: 110px !important;}
+	.mW90 {width: 90% !important;}
+	.mW100 {width: 100% !important;}
+	.inputBox > * + *{margin-top: 3px;}
+}
+@media screen and (max-width:374px) {
+	.mW90 {width: 85% !important;}
+}
 
 /* height */
 .h210 {height: 210px;}
