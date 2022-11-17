@@ -122,11 +122,22 @@
   display: flex;
   border-top: 1px solid #bc6868;
   margin-bottom: 15px;
+  flex-wrap: wrap;
 }
 .tableStyle1 .item {
-  flex: 1;
   display: flex;
   flex-direction: column;
+  width: calc(100% / 3);
+  flex-grow: 1;
+}
+.tableStyle1.cnt5 .item {
+  width: calc(100% / 5);
+}
+.tableStyle1.cnt2 .item {
+  width: calc(100% / 2);
+}
+.tableStyle1.cnt1 .item {
+  width: 100%;
 }
 .tableStyle1 .item .head {
   width: 100%;
@@ -139,7 +150,11 @@
   border-left: 1px solid #e8d7d7;
   border-bottom: 1px solid #e8d7d7;
 }
-.tableStyle1 .item:first-child .head {
+.tableStyle1.cnt6 .item {flex-grow: 0;}
+.tableStyle1 .item:nth-child(1) .head,
+.tableStyle1 .item:nth-child(1) .body,
+.tableStyle1.cnt6 .item:nth-child(3n+1) .head,
+.tableStyle1.cnt6 .item:nth-child(3n+1) .body {
   border-left: unset;
 }
 .tableStyle1 .item .head h3 {
@@ -159,9 +174,6 @@
   border-left: 1px solid #e8d7d7;
   border-bottom: 1px solid #e8d7d7;
 }
-.tableStyle1 .item:first-child .body {
-  border-left: unset;
-}
 .tableStyle1 .item .body p {
   font-size: 17px !important;
   font-weight: 400 !important;
@@ -175,6 +187,7 @@
   .tableStyle1 .item {
     border-top: 1px solid #bc6868;
     margin-bottom: 20px;
+    width: 100% !important;
   }
   .tableStyle1 .item .head {
     border-bottom: 1px solid #e9e9e9;
@@ -207,8 +220,15 @@
 .profileWrap .profile:nth-child(2) {
   margin-left: 10px;
 }
-.profileWrap .profile:hover {
+.profileWrap .profile:hover::after {
   border: 4px solid #9a7f62;
+  content: "";
+  display: block;
+  width: calc(100% - 5px);
+  height: calc(100% - 5px);
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 .profileWrap .profile > a {
   position: absolute;
@@ -307,6 +327,7 @@
   .profileWrap {flex-direction: column;}
   .profileWrap .profile:nth-child(1) {
     margin-right: 0;
+    margin-bottom: 20px;
   }
   .profileWrap .profile:nth-child(2) {
     margin-left: 0;
@@ -486,4 +507,7 @@
 [class^="tblType"].type2 table th,
 [class^="tblType"].type2 table td {
   text-align: center;
+}
+@media screen and (max-width: 799px) {
+  .imgBox img.phide{display: inline-block !important;}
 }

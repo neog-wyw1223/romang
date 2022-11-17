@@ -43,6 +43,7 @@ img {max-width: 100%;}
 
 a {text-decoration: none;}
 a:hover {text-decoration: none;}
+.clear:after, ul:after, ol:after, dl:after, .afl:after	{content:""; display:block; clear:both;}
 .phide, .pblock2, .mblock, .tblock {display:none !important}
 
 @media screen and (max-width:1399px) {
@@ -61,6 +62,14 @@ a:hover {text-decoration: none;}
 	.mhide {display:none !important}
 }
 
+/* css :align */
+.al	{text-align:left !important}
+.ac	{text-align:center !important}
+.ar	{text-align:right !important}
+.aAl td {text-align:left !important}
+.vt, .avt *	{vertical-align:top !important}
+.vm, .avm *	{vertical-align:middle !important}
+.vb, .avb *	{vertical-align:bottom !important}
 
 input[type='text'] + input[type='checkbox'] + label, 
 input[type='password'] + input[type='checkbox'] + label, 
@@ -253,6 +262,7 @@ input::placeholder {color: #999; opacity: 1;}			/* 파이어폭스 51+, 크롬 5
 .mb120 {margin-bottom: 120px !important;}
 .mb150 {margin-bottom: 150px !important;}
 
+.p00 {padding: 0 !important;}
 /* padding-top */
 .pt15 {padding-top: 15px !important;}
 .pt50 {padding-top: 50px !important;}

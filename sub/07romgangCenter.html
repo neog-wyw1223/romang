@@ -1,269 +1,278 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Roman Tax</title>
-  <link rel="stylesheet" href="../css/style.css">
-  <script defer src="../js/headerEvent.js"></script>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Roman Tax</title>
+	<script src="../lib/jquery-1.11.0.min.js"></script>
+
+	<!-- common -->
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<script src="../js/common.js"></script>
 </head>
 <body>
-  <div class="mobileBg"></div>
-  <div id="headerM">
-    <button><img src="../images/icon/bar1.png" alt="menu"></button>
-    <h1><a href="#none"><img src="../images/main/logo.png" alt="logo"></a></h1>
-  </div>
-  <div id="wrap">
-    <div id="header">
-      <button><img src="../images/icon/bar2.png" alt="menu"></button>
-      <h1><a href="#none"></a></h1>
-      <ul>
-        <li>
-          <a href="#none">로망 소개</a>
-          <ul>
-            <li><a href="./01romangIntroduce_01.html">회사소개</a></li>
-            <li><a href="./01romangIntroduce_02.html">세무사 소개</a></li>
-            <li><a href="./01romangIntroduce_03.html">협력사 소개</a></li>
-            <li><a href="./01romangIntroduce_04.html">오시는길</a></li>
-          </ul>
-        </li>
-        <li><a href="./02romgangService_01.html">로망 서비스</a></li>
-        <li><a href="#none">블로그</a></li>
-        <li><a href="./04romgangCenter.html">법인설립센터</a></li>
-        <li><a href="./05romgangCenter.html">재산제세센터</a></li>
-        <li><a href="./06romgangCenter.html">세무조사대응센터</a></li>
-        <li class="on"><a href="./07romgangCenter.html">조세불복센터</a></li>
-        <li><a href="./08consulting.html">상담신청</a></li>
-      </ul>
-    </div>
-    <div id="contents">
-      <div class="container">
-        <div class="title">
-          <p>A TAX COMPLAINT CENTER</p>
-          <h1>조세불복센터</h1>
-          <ul>
-            <li>조세불복센터</li>
-          </ul>
-        </div>
-        <div class="contBox rC rAC">
-          <div class="cont cont1">
-            <div class="left">
-              <img class="pc" src="../images/contents/center_img4.png" alt="대표님의 로망의 시작, 로망이 처음부터 함께 합니다.">
-              <img class="mobile" src="../images/contents/center_img4-1.png" alt="대표님의 로망의 시작, 로망이 처음부터 함께 합니다.">
-            </div>
-            <div class="right">
-              <h2>
-                국세청, 잘못 걷은 세금만 6조 9000억원…<br> 
-                세금을 잘못 부과했다며 불복한 사례 급증”<br>
-                <p>(2022-10-15, 시사저널 1722호)</p>
-              </h2>
-              <p>
-                세금은 정해진 것이 아닙니다. 세금을 부과하는 국세청, 세금을
-                신고하는 납세자, 두 주체는 모두 사람입니다. 억울하고 부당한 세금, 
-                Roman Tax 조세불복센터와 함께 정당한 법적 절차를 통해 
-                구제 받으실 수 있습니다.
-              </p>
-            </div>
-          </div>
-          <div class="cont cont2"> 
-            <h2>
-              전문적인 신고와 국세청 경험을 갖춘 Roman Tax와 함께라면 세부담과 리스크는 최소화
-            </h2>
-            <div class="tableStyle tableStyle1">
-              <div class="item">
-                <div class="head">
-                  <h3>조세불복 및 고충처리</h3>
-                </div>
-                <div class="body">
-                  <img src="../images/contents/cont_img13.png" alt="">
-                  <img src="../images/contents/cont_img13-1.png" alt="">
-                </div>
-              </div>
-              <div class="item">
-                <div class="body">
-                  <img src="../images/contents/cont_img14.png" alt="">
-                  <img src="../images/contents/cont_img14-1.png" alt="">
-                </div>
-              </div>
-              <div class="item">
-                <div class="body">
-                  <ul class="bltList01">
-                    <li>
-                      조세불복이란 과세관청으로부터 부당하고 생각되는 처분을 받았거나, 환급신청을 했는데 환급받지 못한 경우, 감면신청을 했는데 감면받지 못한
-                      경우와 같이 과세관청으로부터 정당한 처분을 받지 못했다고 생각하는 경우에 납세자의 권리를 구제 받을 수 있는 제도를 말합니다.
-                    </li>
-                    <li>
-                      조세불복제도로는 이의신청, 심사청구, 심판청구, 행정소송이 있으며, 심사청구는 국세청장에게 심사를 청구하는 심사청구와 감사원에 심사를
-                      청구하는 감사원 심사청구, 조세심판원장에게 청구하는 심판청구가 있습니다.
-                    </li>
-                    <li>
-                      이 때, 조세소송을 제기하기 위해서는 법적으로 전심절차인 심사청구 혹은 심판청구를 반드시 거쳐야 하며, 그에 따라 조세불복을 고려한다면 전심절차와
-                      더불어 조세소송까지를 염두해 두고 긴 호흡을 통해 행해지는게 다반사입니다.
-                    </li>
-                    <li>
-                      또한 조세불복의 경우 법에서 정한 조세불복기한(30일,60일,90일)내 이의를 제기하지 않는 경우는 구제 받지 못하므로 부당한 처분 혹은 정당한 처분을
-                      받지 못한 경우 신속하게 전문가에게 의뢰하여 불복을 제기하여야 합니다.
-                    </li>
-                    <li>
-                      이와 더불어 납세자가 부득이한 사유로 기한 내에 불복청구 등 법령상 구제절차를 이용하지 못한 경우 납세자보호사무처리규정에 의거 납세자의
-                      권리를 신속하게 구제하기 위해 고충민원 제도를 이용하여 억울함을 해결할 수도 있습니다.
-                    </li>
-                    <li>
-                      고충처리의 경우 조세불복 구제절차를 이용하지 못하였거나 조세소송의 고단함을 대신하여 납세자의 억울함을 호소할 수 있어 필요한 경우 적극적으로
-                      고려해볼 수 있는 제도입니다.
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="cont cont3"> 
-            <h2>
-              세금과 관련 된 억울함을 해소해드리기 위한 국세청 경험 기반 맞춤형 조세불복 서비스 제공
-            </h2>
-            <div class="tableStyle tableStyle1">
-              <div class="item">
-                <div class="head">
-                  <h3>로망의 조세불복 및 고충처리 특장점</h3>
-                </div>
-                <div class="body">
-                  <div class="tbody">
-                    <div class="th">전문 인력</div>
-                    <div class="td">· 오랜 국세청 조세 행정 경험을 기반으로 납세자의 상황에 맞는 조세불복  솔루션 제공</div>
-                  </div>
-                  <div class="tbody">
-                    <div class="th">원포인트 원스톱 서비스</div>
-                    <div class="td">· 제휴 법률파트너를 통해 조세불복의 전심절차부터 조세소송까지 로망을 통한 원포인트 원스톱 서비스 제공</div>
-                  </div>
-                  <div class="tbody">
-                    <div class="th">IT기술 도입을 통한 체계적인 관리</div>
-                    <div class="td">· 장기간 지속되는 조세불복 업무 관리를 위해 IT기술을 통한 체계적인 업무 진행 및 관리 지원</div>
-                  </div>
-                  <div class="tbody">
-                    <div class="th">전문 인적 네트워크</div>
-                    <div class="td">· 고시회, 세무대학, 국세청을 총 망라한 인적 네트워크 기반 전문성 보유</div>
-                  </div>
-                </div>
-              </div> 
-            </div>
-          </div>
-          <div class="cont cont4">
-            <h2>
-              국세청 경험에 기반한 정확하고 체계적인 고충처리 및 조세불복 전심절차!
-            </h2>
-            <ul class="profileWrap">
-              <li class="profile">
-                <a href="#none"></a>
-                <div class="ctaImg ctaImg1"></div>
-                <div class="ctaIntroduce">
-                  <div>
-                    <p class="name">양진규 <span >대표세무사</span></p>
-                    <div class="cross"></div>
-                  </div>
-                  <p>
-                    소상공인 부터 규모 있는 외감업체까지<br/>
-                    도소매 제조부터 건설, 시행, 주류 등 다채로운 업종 경험을 보유<br/>
-                    일반 근무세무사, 팀장세무사, 총괄세무사까지 다년 간의<br/>
-                    서비스 노하우 보유
-                  </p>
-                </div>
-              </li>
-              <li class="profile">
-                <a href="#none"></a>
-                <div class="ctaImg ctaImg2"></div>
-                <div class="ctaIntroduce">
-                  <div>
-                    <p class="name">김재운 <span>고문세무사</span></p>
-                    <div class="cross"></div>
-                  </div>
-                  <p>
-                    국세청 출신이라고 다 모든 경험을 하는 것이 아닙니다.<br/>
-                    다년간의 기업 세금 관련 국세 행정 경험 다수 보유<br/>
-                    기업 생애주기별 세무 위험요소 전문가<br/>
-                    국세청 출신 세무사라면 국세청 내 이력을 확인하세요
-                  </p>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <ul class="cont teamIntro">
-            <li></li>
-            <li></li>
-            <li>
-              <img src="../images/contents/cont_img15.png">
-              <img src="../images/contents/cont_img15-1.png">
-            </li>
-          </ul>
-          <ul class="cont consultingLink">
-            <li>
-              <p>내가 낸 세금이 적합한지 확인할 수 있는 전문가를 찾고 계신다면?</p>
-              <p>당신의 로망을 지켜드릴 로망과 함께 하세요.</p>
-            </li>
-            <li><a href="./08consulting.html">상담 신청</a></li>
-          </ul>
-        </div>
-      </div>
-      <div id="footer">
-        <div class="container">
-          <div class="fcont fcont1">
-            <h1><img src="../images/main/logo_footer.png" alt="세무회계 로망"></h1>
-            <ul>
-              <li class="on"><a href="#none">찾아오시는 길</a></li>
-              <li><a href="#none">이용안내</a></li>
-              <li><a href="#none">개인정보 취급방침</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="container">
-          <div class="fcont fcont2">
-            <div class="textWrap">
-              <ul>
-                <li>
-                  <ul>
-                    <li>세무법인 로망</li>
-                    <li>대표세무사 : 양진규</li>
-                  </ul>
-                </li>
-                <li>사업자 등록번호: 419-08-02076</li>
-              </ul>
-              <ul>
-                <li>(05836) 서울시 송파구 법원로11길 7 1026호 <br class="mobile"/>(문정동, 현대지식산업센터 &nbsp;&nbsp;C동)</li>
-                <li>romantax@roman-tax.kr</li>
-              </ul>
-              <ul>
-                <li>TEL : 02-6925-4350</li>
-                <li>FAX : 0503-8379-2185</li>
-              </ul>
-            </div>
-            <div class="linkWrap">
-              <ul>
-                <li>
-                  <a href="#none"></a>
-                  <img src="../images/icon/footer1.png">
-                  <p>상담신청</p>
-                </li>
-                <li>
-                  <a href="#none"></a>
-                  <img src="../images/icon/footer2.png">
-                  <p>카카오톡</p>
-                </li>
-                <li>
-                  <a href="#none"></a>
-                  <img src="../images/icon/footer3.png">
-                  <p>네이버</p>
-                </li>
-                <li>
-                  <a href="#none"></a>
-                  <img src="../images/icon/footer4.png">
-                  <p>전화상담</p>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+	<div class="mobileBg"></div>
+	<div id="headerM">
+		<button><img src="../images/icon/bar1.png" alt="menu"></button>
+		<h1><a href="../main/main.html"><img src="../images/main/logo.png" alt="Roman Tax"></a></h1>
+	</div>
+	<div id="wrap">
+		<div id="header">
+			<button><img src="../images/icon/bar2.png" alt="menu"></button>
+			<h1><a href="../main/main.html"></a></h1>
+			<ul>
+				<li>
+					<a href="#none">로망 소개</a>
+					<ul>
+						<li><a href="../sub/01romangIntroduce_01.html">회사소개</a></li>
+						<li><a href="../sub/01romangIntroduce_02.html">세무사 소개</a></li>
+						<li><a href="../sub/01romangIntroduce_03.html">협력사 소개</a></li>
+						<li><a href="../sub/01romangIntroduce_04.html">오시는길</a></li>
+					</ul>
+				</li>
+				<li><a href="../sub/02romgangService_01.html">로망 서비스</a></li>
+				<li><a href="#none">블로그</a></li>
+				<li><a href="../sub/04romgangCenter.html">법인설립센터</a></li>
+				<li><a href="../sub/05romgangCenter.html">재산제세센터</a></li>
+				<li><a href="../sub/06romgangCenter.html">세무조사대응센터</a></li>
+				<li class="on"><a href="../sub/07romgangCenter.html">조세불복센터</a></li>
+				<li><a href="../sub/08consulting.html">상담신청</a></li>
+			</ul>
+		</div>
+		<div id="contents">
+			<div class="container">
+				<div class="title">
+					<p>A TAX COMPLAINT CENTER</p>
+					<h1>조세불복센터</h1>
+					<ul>
+						<li>조세불복센터</li>
+					</ul>
+				</div>
+				<div class="contBox rC rAC">
+					<div class="cont cont1">
+						<div class="left">
+							<img class="pc" src="../images/contents/center_img4.png" alt="대표님의 로망의 시작, 로망이 처음부터 함께 합니다.">
+							<img class="mobile" src="../images/contents/center_img4-1.png" alt="대표님의 로망의 시작, 로망이 처음부터 함께 합니다.">
+						</div>
+						<div class="right">
+							<h2>
+							국세청, 잘못 걷은 세금만 6조 9000억원…<br>
+							세금을 잘못 부과했다며 불복한 사례 급증”<br>
+							<p>(2022-10-15, 시사저널 1722호)</p>
+							</h2>
+							<p>
+							세금은 정해진 것이 아닙니다. 세금을 부과하는 국세청, 세금을
+							신고하는 납세자, 두 주체는 모두 사람입니다. 억울하고 부당한 세금,
+							Roman Tax 조세불복센터와 함께 정당한 법적 절차를 통해
+							구제 받으실 수 있습니다.
+							</p>
+						</div>
+					</div>
+					<div class="cont cont2">
+						<h2>
+						전문적인 신고와 국세청 경험을 갖춘 Roman Tax와 함께라면 세부담과 리스크는 최소화
+						</h2>
+						<div class="tableStyle tableStyle1 cnt1">
+							<div class="item">
+								<div class="head">
+									<h3>조세불복 및 고충처리</h3>
+								</div>
+								<div class="body">
+									<img src="../images/contents/cont_img13.png" alt="">
+									<img src="../images/contents/cont_img13-1.png" alt="">
+								</div>
+							</div>
+							<div class="item">
+								<div class="body">
+									<img src="../images/contents/cont_img14.png" alt="">
+									<img src="../images/contents/cont_img14-1.png" alt="">
+								</div>
+							</div>
+							<div class="item">
+								<div class="body">
+									<ul class="bltList01">
+										<li>
+											조세불복이란 과세관청으로부터 부당하고 생각되는 처분을 받았거나, 환급신청을 했는데 환급받지 못한 경우, 감면신청을 했는데 감면받지 못한
+											경우와 같이 과세관청으로부터 정당한 처분을 받지 못했다고 생각하는 경우에 납세자의 권리를 구제 받을 수 있는 제도를 말합니다.
+										</li>
+										<li>
+											조세불복제도로는 이의신청, 심사청구, 심판청구, 행정소송이 있으며, 심사청구는 국세청장에게 심사를 청구하는 심사청구와 감사원에 심사를
+											청구하는 감사원 심사청구, 조세심판원장에게 청구하는 심판청구가 있습니다.
+										</li>
+										<li>
+											이 때, 조세소송을 제기하기 위해서는 법적으로 전심절차인 심사청구 혹은 심판청구를 반드시 거쳐야 하며, 그에 따라 조세불복을 고려한다면 전심절차와
+											더불어 조세소송까지를 염두해 두고 긴 호흡을 통해 행해지는게 다반사입니다.
+										</li>
+										<li>
+											또한 조세불복의 경우 법에서 정한 조세불복기한(30일,60일,90일)내 이의를 제기하지 않는 경우는 구제 받지 못하므로 부당한 처분 혹은 정당한 처분을
+											받지 못한 경우 신속하게 전문가에게 의뢰하여 불복을 제기하여야 합니다.
+										</li>
+										<li>
+											이와 더불어 납세자가 부득이한 사유로 기한 내에 불복청구 등 법령상 구제절차를 이용하지 못한 경우 납세자보호사무처리규정에 의거 납세자의
+											권리를 신속하게 구제하기 위해 고충민원 제도를 이용하여 억울함을 해결할 수도 있습니다.
+										</li>
+										<li>
+											고충처리의 경우 조세불복 구제절차를 이용하지 못하였거나 조세소송의 고단함을 대신하여 납세자의 억울함을 호소할 수 있어 필요한 경우 적극적으로
+											고려해볼 수 있는 제도입니다.
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="cont cont3">
+						<h2>
+						세금과 관련 된 억울함을 해소해드리기 위한 국세청 경험 기반 맞춤형 조세불복 서비스 제공
+						</h2>
+						<div class="tableStyle tableStyle1">
+							<div class="item">
+								<div class="head">
+									<h3>로망의 조세불복 및 고충처리 특장점</h3>
+								</div>
+								<div class="body p00">
+									<div class="tbody">
+										<div class="th">전문 인력</div>
+										<div class="td">· 오랜 국세청 조세 행정 경험을 기반으로 납세자의 상황에 맞는 조세불복  솔루션 제공</div>
+									</div>
+									<div class="tbody">
+										<div class="th">원포인트 원스톱 서비스</div>
+										<div class="td">· 제휴 법률파트너를 통해 조세불복의 전심절차부터 조세소송까지 로망을 통한 원포인트 원스톱 서비스 제공</div>
+									</div>
+									<div class="tbody">
+										<div class="th">IT기술 도입을 통한 체계적인 관리</div>
+										<div class="td">· 장기간 지속되는 조세불복 업무 관리를 위해 IT기술을 통한 체계적인 업무 진행 및 관리 지원</div>
+									</div>
+									<div class="tbody">
+										<div class="th">전문 인적 네트워크</div>
+										<div class="td">· 고시회, 세무대학, 국세청을 총 망라한 인적 네트워크 기반 전문성 보유</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="cont cont4">
+						<h2>
+						국세청 경험에 기반한 정확하고 체계적인 고충처리 및 조세불복 전심절차!
+						</h2>
+						<ul class="profileWrap">
+							<li class="profile">
+								<a href="#none"></a>
+								<div class="ctaImg ctaImg1"></div>
+								<div class="ctaIntroduce">
+									<div>
+										<p class="name">양진규 <span >대표세무사</span></p>
+										<div class="cross"></div>
+									</div>
+									<p>
+									소상공인 부터 규모 있는 외감업체까지<br/>
+									도소매 제조부터 건설, 시행, 주류 등 다채로운 업종 경험을 보유<br/>
+									일반 근무세무사, 팀장세무사, 총괄세무사까지 다년 간의<br/>
+									서비스 노하우 보유
+									</p>
+								</div>
+							</li>
+							<li class="profile">
+								<a href="#none"></a>
+								<div class="ctaImg ctaImg2"></div>
+								<div class="ctaIntroduce">
+									<div>
+										<p class="name">김재운 <span>고문세무사</span></p>
+										<div class="cross"></div>
+									</div>
+									<p>
+									국세청 출신이라고 다 모든 경험을 하는 것이 아닙니다.<br/>
+									다년간의 기업 세금 관련 국세 행정 경험 다수 보유<br/>
+									기업 생애주기별 세무 위험요소 전문가<br/>
+									국세청 출신 세무사라면 국세청 내 이력을 확인하세요
+									</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<ul class="cont teamIntro">
+						<li></li>
+						<li></li>
+						<li>
+							<img src="../images/contents/cont_img15.png">
+							<img src="../images/contents/cont_img15-1.png">
+						</li>
+					</ul>
+					<ul class="cont consultingLink">
+						<li>
+							<p>내가 낸 세금이 적합한지 확인할 수 있는 전문가를 찾고 계신다면?</p>
+							<p>당신의 로망을 지켜드릴 로망과 함께 하세요.</p>
+						</li>
+						<li><a href="../sub/08consulting.html">상담 신청</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="footer">
+				<div class="container">
+					<div class="fcont fcont1">
+						<h1><img src="../images/main/logo_footer.png" alt="세무회계 로망"></h1>
+						<ul>
+							<li class="on"><a href="#none">찾아오시는 길</a></li>
+							<li><a href="#none">이용안내</a></li>
+							<li><a href="#none">개인정보 취급방침</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="container">
+					<div class="fcont fcont2">
+						<div class="textWrap">
+							<ul>
+								<li>
+									<ul>
+										<li>세무법인 로망</li>
+										<li>대표세무사 : 양진규</li>
+									</ul>
+								</li>
+								<li>사업자 등록번호: 419-08-02076</li>
+							</ul>
+							<ul>
+								<li>(05836) 서울시 송파구 법원로11길 7 1026호 <br class="mobile"/>(문정동, 현대지식산업센터 &nbsp;&nbsp;C동)</li>
+								<li>romantax@roman-tax.kr</li>
+							</ul>
+							<ul>
+								<li>TEL : 02-6925-4350</li>
+								<li>FAX : 0503-8379-2185</li>
+							</ul>
+						</div>
+						<div class="linkWrap">
+							<ul>
+								<li>
+									<a href="#none"></a>
+									<img src="../images/icon/footer1.png">
+									<p>상담신청</p>
+								</li>
+								<li>
+									<a href="#none"></a>
+									<img src="../images/icon/footer2.png">
+									<p>카카오톡</p>
+								</li>
+								<li>
+									<a href="#none"></a>
+									<img src="../images/icon/footer3.png">
+									<p>네이버</p>
+								</li>
+								<li>
+									<a href="#none"></a>
+									<img src="../images/icon/footer4.png">
+									<p>전화상담</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<ul id="quick">
+			<li><a href="../sub/08.consulting.html">상담신청</a></li>
+			<li><a href="#none">카카오톡</a></li>
+			<li><a href="#none">블로그</a></li>
+			<li><a href="tel:02-6925-4350">유선전화</a></li>
+		</ul>
+	</div>
 </body>
 </html>
