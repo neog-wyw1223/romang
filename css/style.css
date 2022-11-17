@@ -193,7 +193,6 @@
 .rI03 .cont4 .tableStyle .item .body.img.img4 {background-image: url("../images/contents/table_img4.png");}
 .rI03 .cont4 .tableStyle .item .body.img.img5 {background-image: url("../images/contents/table_img5.png");}
 .rI03 .cont4 .tableStyle .item .body.img.img6 {background-image: url("../images/contents/table_img6.png");}
-.rI03 .cont4 .tableStyle .item .body.text {}
 @media screen and (max-width: 1599px) {
   .rI03 .cont1 {
     flex-direction: column;
@@ -228,6 +227,13 @@
   .rI03 .cont1 .left h2 br,
   .rI03 .cont1 .left p br {display: block;}
   .rI03 .cont1 .right { padding-top: 0;}
+  .rI03 .cont4 .tableStyle .item .body.img {background-size: 50%;}
+  .rI03 .cont4 .tableStyle .item .body.img.img1 {background-image: url("../images/contents/table_img1_M.png");}
+  .rI03 .cont4 .tableStyle .item .body.img.img2 {background-image: url("../images/contents/table_img2_M.png");}
+  .rI03 .cont4 .tableStyle .item .body.img.img3 {background-image: url("../images/contents/table_img3_M.png");}
+  .rI03 .cont4 .tableStyle .item .body.img.img4 {background-image: url("../images/contents/table_img4_M.png");}
+  .rI03 .cont4 .tableStyle .item .body.img.img5 {background-image: url("../images/contents/table_img5_M.png");}
+  .rI03 .cont4 .tableStyle .item .body.img.img6 {background-image: url("../images/contents/table_img6_M.png"); background-size: 30%;}
 }
 @media screen and (max-width: 767px) {
   .rI03 .cont1 {flex-direction: column;}
@@ -240,6 +246,12 @@
   .rI03 .cont2 > p br {display: none;}
   .rI03 .cont4 .tableStyle .item .body.text {min-height: unset;}
   .rI03 .cont4 > p {padding-top: 30px;}
+  .rI03 .cont4 .tableStyle .item .body.img {background-size: 30%;}
+  .rI03 .cont4 .tableStyle .item .body.img.img6 {background-size: 18%;}
+}
+@media screen and (max-width: 479px) {
+  .rI03 .cont4 .tableStyle .item .body.img {background-size: 50%;}
+  .rI03 .cont4 .tableStyle .item .body.img.img6 {background-size: 30%;}
 }
 /* 01romangIntroduce_04 */
 .rI04 .cont1  {justify-content: space-between;}
@@ -253,13 +265,14 @@
 .rI04 .cont1 .left .text.text2 > h3 {margin-right: 20px;}
 .rI04 .cont1 .left .text.text2 > div {text-align: left;}
 .rI04 .cont1 .left .text.text2 > div > div {display: flex; margin-bottom: 20px; align-items: center;}
-.rI04 .cont1 .left .text.text2 > div > div img {width: 47px; height: 47px;}
+.rI04 .cont1 .left .text.text2 > div > div img {width: 53px; height: 53px;}
+.rI04 .cont1 .left .text.text2 > div > div img.mobile {margin: unset;}
 .rI04 .cont1 .left .text.text2 > div > div > ul {margin-left: 10px;}
 .rI04 .cont1 .left .text.text2 > div > div > ul > li {font-size: 18px;}
 .rI04 .cont1 .left .text > h3,
 .rI04 .cont1 .left .text > p {font-size: 20px !important; font-weight: 400 !important; text-align: left;}
 .rI04 .cont1 .left .text > p.red {font-size: 17px !important; color: #d82421 !important;}
-.rI04 .cont1 .right {display: flex; justify-content: flex-end;}
+.rI04 .cont1 .right {display: flex; justify-content: flex-end; margin-left: 10px;}
 @media screen and (max-width: 767px) {
   .rI04 .cont1 {flex-direction: column;}
   .rI04 .cont1 .right {width: 100%; justify-content: center;}
