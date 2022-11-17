@@ -524,6 +524,7 @@
   .tabType02  {justify-content: flex-start;}
   .tabType02 > li {flex-basis:auto;width: calc(50% - 6px);margin: 3px !important;}
 }
+#blogList {margin-bottom: 0 !important;}
 .blogList {
 	display: flex;
 	flex-wrap: wrap;
@@ -608,3 +609,54 @@
   .blogList {margin-left: -15px;}
 }
 /*-- 블로그 */
+
+/* [s] 페이징 */
+.paging {
+	text-align:center;
+	margin-top:70px;
+	font-size:0;
+}
+.paging * {
+	vertical-align:top;
+	display:inline-block;
+	box-sizing:border-box;
+}
+.paging a {
+	min-width:27px;
+	height:27px;
+	line-height:27px;
+	text-align:center;
+}
+.paging > a {
+  margin:0 5px;
+	text-indent: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+  background-repeat: no-repeat;
+  background-size: 11px 17px;
+  background-position: center;
+  width: 27px;
+  height: 27px;
+}
+.paging .prev {background-image: url('../images/btn/btn_prev.png');}
+.paging .next {background-image: url('../images/btn/btn_next.png');}
+.paging ul {margin:0 5px;}
+.paging li {float:left}
+.paging li a {
+	display:block;
+	color:#777777;
+  font-size: 17px;
+	margin:0 2.5px;
+  padding: 0 3px;
+}
+.paging li a:hover,
+.paging li.on a {
+  color: #fff;
+  background-color: #e42c2a;
+}
+.paging + .btnAreaLR {float: right;}
+
+@media screen and (max-width:799px) {
+	.paging {margin-top: 30px;}
+}
+/*--[e] 페이징 */
