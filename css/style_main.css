@@ -400,7 +400,10 @@
 @media screen and (max-width:1179px) {
 	.centerList > li > a > div {padding: 20px 10px 120px;background-position: calc(100% - 20px) calc(100% - 20px);}
 }
-
+@media screen and (max-width:879px) {
+	.patnerBox > ul li .cont p{word-break: keep-all;}
+	.centerList > li > a > div {background-size: auto 100px;background-position: center calc(100% - 20px);}
+}
 
 /*-- 협력사 및 센터안내 */
 
@@ -443,6 +446,11 @@
 @media screen and (max-width: 1179px) {
 	.blogList > li {padding: 25px 0 0 25px;}
 	#blogList .btn_more {margin-top: 20px;}
+}
+@media screen and (max-width: 879px) {
+	.blogList {max-height: 640px;overflow-y: hidden;}
+	.blogList > li{width:calc(100% / 3);padding: 35px 0 0 10px;}
+	.blogList {margin-left: -10px;}
 }
 /*-- 블로그 최신글 */
 /* 오시는 길 및 상담신청 */
