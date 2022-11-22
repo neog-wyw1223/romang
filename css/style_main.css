@@ -327,7 +327,7 @@
 /*-- 소개글 및 서비스 소개 */
 /* 협력사 및 센터안내 */
 #romanNetwork {
-	background: url('../images/main/network_bg.png') repeat-x;
+	background: url('../images/main/network_bg.png') center center repeat-x;
 }
 .centerList {
 	display: flex;
@@ -495,6 +495,10 @@
 	color: #e75250;
 	border-bottom: #e75250 solid 2px;
 }
+.blogList {
+	height: 945px;
+	overflow-y: hidden;
+}
 .blogList > li{
 	padding: 35px 0 0 25px;
 	width: 25%;
@@ -533,6 +537,9 @@
 }
 @media screen and (max-width: 374px) {
 	.tabType01 > li > a {font-size: 16px;margin: 0 5px;}
+}
+@media screen and (max-height: 1239px) {
+	.blogList {height: 630px;}
 }
 /*-- 블로그 최신글 */
 /* 오시는 길 및 상담신청 */

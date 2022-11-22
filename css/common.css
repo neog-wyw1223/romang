@@ -224,6 +224,7 @@ input::placeholder {color: #999; opacity: 1;}			/* 파이어폭스 51+, 크롬 5
 .vam {vertical-align: middle;}
 
 /* font-size */
+.fs12 {font-size: 12px !important;}
 .fs15 {font-size: 15px !important;}
 .fs16 {font-size: 16px !important;}
 .fs17 {font-size: 17px !important;}
@@ -286,6 +287,7 @@ input::placeholder {color: #999; opacity: 1;}			/* 파이어폭스 51+, 크롬 5
 
 /* color */
 .fcR1 {color: #dd413f !important;}
+.fcR2 {color: #d01210 !important;}
 .fcP1 {color: #a68080 !important;}
 .fcG1 {color: #777777 !important;}
 .fcG2 {color: #555555 !important;}

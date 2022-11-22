@@ -13,6 +13,17 @@
 }
 
 /* dot */
+p.dot {position: relative; margin-left: 6px;}
+p.dot::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 3px;
+  height: 2px;
+  top: 10px;
+  left: -6px;
+  background-image: url("../images/blt/blt01.png");
+}
 .dot p::before {
   content: "";
   display: block;
@@ -33,7 +44,9 @@
 }
 /* tab */
 .tab1 {
+  display: flex;
   justify-content: center;
+  margin-bottom: 60px;
 }
 .tab1 li {
   width: 194px;
@@ -58,7 +71,7 @@
   line-height: 52px;
   font-weight: 400;
 }
-.tab2Wrap {justify-content: center;}
+.tab2Wrap {justify-content: center; display: flex; margin-bottom: 60px;}
 .tab2Wrap .tab2 {
   width: 60%;
   display: flex;
@@ -186,7 +199,7 @@
   }
   .tableStyle1 .item {
     border-top: 1px solid #bc6868;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     width: 100% !important;
   }
   .tableStyle1 .item .head {
@@ -251,9 +264,10 @@
   content: "";
   display: block;
   width: 100%;
-  height: 100%;
+  height: 90%;
   background-size: contain;
-  background-position: bottom;
+  background-position-x: center;
+  transform: translateY(11%);
   background-repeat: no-repeat;
 }
 .profileWrap .profile .ctaImg1::before {
@@ -386,7 +400,7 @@
   border-radius: 30px;
   width: 100%;
   line-height: 45px;
-  background: #d02220;
+  background: #e42c2a;
   font-size: 19px;
   font-weight: 700;
   color: #fff;
@@ -551,7 +565,7 @@
 }
 .blogList > li .gubun {
 	float: left;
-	color: #e42c2a;
+	color: #d01210;
 	font-size: 18px;
 }
 .blogList > li .date {
