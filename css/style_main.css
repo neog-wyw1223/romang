@@ -547,7 +547,7 @@
 	background:url('../images/main/location_bg.png') right bottom no-repeat #f9f9f9;
 }
 .mapArea {
-	height: 505px;
+	height: 534px;
 }
 .mapArea img{
 	height: 100%; /* To. 개발 : 나중에 API넣고 나면 통채로 지워 주세요. */
