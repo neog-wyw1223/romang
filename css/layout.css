@@ -326,7 +326,7 @@
 #footer .fcont2 .linkWrap ul li:nth-child(3) {background: #00c73c;}
 #footer .fcont2 .linkWrap ul li:nth-child(3) p {color: #fff;}
 #footer .fcont2 .linkWrap ul li:nth-child(4) {background: #ffffff;}
-@media screen and (max-width: 1179px) {
+@media screen and (max-width: 1509px) {
   #footer {padding: 0 15px;}
   #footer .container {border-top: 1px solid #ececec;}
   #footer .fcont {margin-left: 0 !important;}
